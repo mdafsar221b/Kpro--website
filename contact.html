@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="img/logo.svg" type="image/svg+xml">
+  <!-- Open Graph / Social Media -->
+  <meta property="og:title" content="Contact Us | Kpro Solutions Pvt. Ltd.">
+  <meta property="og:description" content="Contact Kpro Solutions. Submit an enterprise project inquiry, consult our architects in Bengaluru, or explore our frequently asked questions.">
+  <meta property="og:url" content="https://www.kpro.co.in/contact.html">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://www.kpro.co.in/img/logo.svg">
+  <meta property="og:site_name" content="Kpro Solutions">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Contact Us | Kpro Solutions Pvt. Ltd.">
+  <meta name="twitter:description" content="Contact Kpro Solutions. Submit an enterprise project inquiry, consult our architects in Bengaluru, or explore our frequently asked questions.">
+  <link rel="canonical" href="https://www.kpro.co.in/contact.html">
+  <meta name="description" content="Contact Kpro Solutions. Submit an enterprise project inquiry, consult our architects in Bengaluru, or explore our frequently asked questions.">
+  <title>Contact Us | Kpro Solutions Pvt. Ltd.</title>
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Performance: early connection hints -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <style>
+    .contact-hero {
+      padding-top: 160px;
+      padding-bottom: 60px;
+      background: linear-gradient(180deg, var(--bg-dark) 0%, var(--bg-darker) 100%);
+      text-align: center;
+    }
+    
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 0.9fr 1.1fr;
+      gap: 50px;
+      margin-bottom: 80px;
+      align-items: start;
+    }
+    
+    .contact-info-col {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+    }
+    
+    .contact-detail-card {
+      padding: 30px;
+      display: flex;
+      gap: 20px;
+    }
+    
+    .contact-detail-card i {
+      font-size: 1.8rem;
+      color: var(--accent-cyan);
+      margin-top: 4px;
+    }
+    
+    .contact-label-title {
+      font-size: 1.15rem;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+    
+    .contact-text-detail {
+      font-size: 0.95rem;
+      color: var(--text-secondary);
+      line-height: 1.6;
+    }
+    
+    /* Interactive Mock Map */
+    .map-card {
+      height: 250px;
+      width: 100%;
+      background: radial-gradient(circle, rgba(13, 25, 50, 1) 0%, rgba(8, 12, 25, 1) 100%);
+      position: relative;
+      overflow: hidden;
+      border: 1px solid var(--glass-border);
+      border-radius: var(--border-radius-md);
+    }
+    
+    .map-grid-pattern {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-size: 20px 20px;
+      background-image: 
+        linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+    }
+    
+    .map-radar-sweep {
+      position: absolute;
+      width: 200%;
+      height: 200%;
+      background: conic-gradient(from 0deg at 50% 50%, var(--accent-cyan-glow) 0deg, transparent 90deg, transparent 360deg);
+      border-radius: 50%;
+      top: -50%;
+      left: -50%;
+      animation: radarRotate 8s linear infinite;
+      pointer-events: none;
+      transform-origin: center center;
+    }
+    
+    .map-marker {
+      width: 12px;
+      height: 12px;
+      background: var(--accent-cyan);
+      border-radius: 50%;
+      position: absolute;
+      z-index: 10;
+    }
+    
+    .map-pulse {
+      position: absolute;
+      width: 36px;
+      height: 36px;
+      border: 2px solid var(--accent-cyan);
+      border-radius: 50%;
+      top: -12px;
+      left: -12px;
+      opacity: 0;
+      animation: pulseMap 2s linear infinite;
+    }
+    
+    @keyframes pulseMap {
+      0% { transform: scale(0.5); opacity: 0; }
+      50% { opacity: 0.6; }
+      100% { transform: scale(2); opacity: 0; }
+    }
+    
+    @keyframes radarRotate {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+    
+    /* FAQ Accordion Styles */
+    .faq-section {
+      border-top: 1px solid var(--glass-border);
+      padding-top: 80px;
+    }
+    
+    .faq-search-bar {
+      max-width: 500px;
+      margin: 0 auto 40px auto;
+      position: relative;
+    }
+    
+    .faq-search-input {
+      width: 100%;
+      background: var(--bg-dark);
+      border: 1px solid var(--glass-border);
+      padding: 14px 20px 14px 45px;
+      color: var(--text-primary);
+      border-radius: var(--border-radius-sm);
+      font-family: var(--font-body);
+      font-size: 0.95rem;
+    }
+    
+    .faq-search-icon {
+      position: absolute;
+      left: 16px;
+      top: 17px;
+      color: var(--text-muted);
+    }
+    
+    .faq-search-input:focus {
+      outline: none;
+      border-color: var(--accent-cyan);
+      box-shadow: 0 0 10px var(--accent-cyan-glow);
+    }
+    
+    .faq-list {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    
+    .faq-item {
+      padding: 0;
+      overflow: hidden;
+      transition: var(--transition-normal);
+    }
+    
+    .faq-trigger {
+      width: 100%;
+      background: transparent;
+      border: none;
+      padding: 24px;
+      text-align: left;
+      font-family: var(--font-heading);
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: var(--text-primary);
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    
+    .faq-trigger i {
+      color: var(--accent-cyan);
+      transition: transform var(--transition-fast);
+    }
+    
+    .faq-trigger.active i {
+      transform: rotate(180deg);
+    }
+    
+    .faq-content {
+      max-height: 0;
+      overflow: hidden;
+      padding: 0 24px;
+      color: var(--text-secondary);
+      font-size: 0.95rem;
+      line-height: 1.6;
+      transition: max-height var(--transition-normal), padding var(--transition-normal);
+    }
+    
+    .faq-content.open {
+      /* max-height set dynamically via JS scrollHeight — no hardcoded value */
+      padding: 0 24px 24px 24px;
+    }
+    
+    /* Floating Labels Form */
+    .contact-form-card {
+      padding: 40px;
+    }
+    
+    /* Interactive submit notification */
+    #contact-success-overlay {
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      gap: 20px;
+      animation: fadeInUp 0.4s ease-out forwards;
+    }
+    
+    #contact-success-overlay i {
+      font-size: 4rem;
+      color: var(--accent-mint);
+      text-shadow: 0 0 15px var(--accent-mint-glow);
+    }
+    
+    @media (max-width: 992px) {
+      .contact-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+    
+    @media (max-width: 576px) {
+      .form-row {
+        grid-template-columns: 1fr;
+      }
+      .contact-form-card {
+        padding: 30px 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Background Orbs -->
+  <div class="glow-orb orb-cyan" style="top: 15%; left: -60px;"></div>
+  <div class="glow-orb orb-mint" style="top: 65%; right: -60px;"></div>
+
+  <div id="site-header"></div>
+
+  <!-- Contact Hero -->
+  <section class="contact-hero">
+    <div class="container" data-reveal>
+      <span class="badge">Get in Touch</span>
+      <h1 class="section-title" style="font-size: 3rem; margin-bottom: 20px;">Enterprise Scoping Inquiries</h1>
+      <p style="max-width: 700px; margin: 0 auto; color: var(--text-secondary); font-size: 1.1rem;">
+        Consult with our engineering team to draft custom blockchain specifications, setup big data answer pools, or schedule edge IoT trials.
+      </p>
+    </div>
+  </section>
+
+  <!-- Main Grid -->
+  <section class="section" style="padding-top: 40px;">
+    <div class="container contact-grid">
+      <!-- Left Info column -->
+      <div class="contact-info-col" data-reveal>
+        
+        <div class="glass-card contact-detail-card">
+          <i class="fa-solid fa-map-location-dot"></i>
+          <div>
+            <h3 class="contact-label-title">Bengaluru Headquarters</h3>
+            <p class="contact-text-detail">
+              Kpro Solutions Pvt. Ltd.<br>
+              Level 6, Tech Park Towers, Outer Ring Road<br>
+              Bengaluru, Karnataka, 560103, India
+            </p>
+          </div>
+        </div>
+
+        <div class="glass-card contact-detail-card">
+          <i class="fa-solid fa-square-phone"></i>
+          <div>
+            <h3 class="contact-label-title">Direct Dial</h3>
+            <p class="contact-text-detail">
+              General / Sales: +91 80 4900 1234<br>
+              Human Resources: +91 80 4900 1256
+            </p>
+          </div>
+        </div>
+
+        <div class="glass-card contact-detail-card">
+          <i class="fa-solid fa-square-envelope"></i>
+          <div>
+            <h3 class="contact-label-title">Corporate Inquiries</h3>
+            <p class="contact-text-detail">
+              Partner & Sales: sales@kpro.co.in<br>
+              Careers: careers@kpro.co.in
+            </p>
+          </div>
+        </div>
+
+        <!-- Interactive Map Mockup -->
+        <div class="map-card">
+          <div class="map-grid-pattern"></div>
+          <div class="map-radar-sweep"></div>
+          <div class="map-marker" style="top: 45%; left: 52%;">
+            <div class="map-pulse"></div>
+          </div>
+          <div class="map-marker" style="top: 25%; left: 35%; opacity: 0.7; transform: scale(0.7);">
+            <div class="map-pulse" style="animation-delay: 0.5s;"></div>
+          </div>
+          <div class="map-marker" style="top: 65%; left: 70%; opacity: 0.5; transform: scale(0.6);">
+            <div class="map-pulse" style="animation-delay: 1s;"></div>
+          </div>
+          <div style="position: absolute; bottom: 12px; left: 16px; color: var(--text-primary); font-family: monospace; font-size: 0.75rem; z-index: 20;">
+            SYS STATE: SECURE // BGLR_NODE_ACTIVE
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Right Form Column -->
+      <div class="glass-card contact-form-card" data-reveal>
+        <div id="contact-form-wrapper">
+          <h2 style="font-size: 1.8rem; margin-bottom: 24px;">Project Scoping Form</h2>
+          
+          <form id="contact-inquiry-form" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="con-name">Your Name *</label>
+                <input type="text" id="con-name" class="form-input" required placeholder="John Doe">
+                <div class="validation-error" id="con-name-error">Please enter your name.</div>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="con-org">Organization *</label>
+                <input type="text" id="con-org" class="form-input" required placeholder="Acme Corp">
+                <div class="validation-error" id="con-org-error">Please enter your organization.</div>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="con-email">Corporate Email *</label>
+                <input type="email" id="con-email" class="form-input" required placeholder="john.doe@acme.com">
+                <div class="validation-error" id="con-email-error">Please enter a valid corporate email.</div>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="con-subject">Primary Architecture *</label>
+                <div class="custom-select-wrapper" id="subject-select-wrapper">
+                  <button type="button" class="custom-select-trigger" id="subject-select-trigger" aria-haspopup="listbox" aria-expanded="false" aria-labelledby="con-subject-label">
+                    <span id="subject-select-label-text">Select service</span>
+                    <i class="fa fa-chevron-down"></i>
+                  </button>
+                  <div class="custom-select-dropdown" id="subject-select-dropdown" role="listbox">
+                    <div class="custom-select-option disabled" data-value="" role="option" aria-selected="false">Select service</div>
+                    <div class="custom-select-option" data-value="genai" role="option" aria-selected="false">Generative AI Solutions</div>
+                    <div class="custom-select-option" data-value="cloud" role="option" aria-selected="false">Cloud &amp; DevOps Scaling</div>
+                    <div class="custom-select-option" data-value="bigdata" role="option" aria-selected="false">Lakehouses &amp; Big Data</div>
+                    <div class="custom-select-option" data-value="blockchain" role="option" aria-selected="false">Smart Contract Blockchains</div>
+                    <div class="custom-select-option" data-value="iot" role="option" aria-selected="false">IoT Telemetry &amp; Edge AI</div>
+                    <div class="custom-select-option" data-value="product" role="option" aria-selected="false">Product Development &amp; MVP</div>
+                    <div class="custom-select-option" data-value="mobile" role="option" aria-selected="false">Mobile App Development</div>
+                    <div class="custom-select-option" data-value="staff" role="option" aria-selected="false">Dedicated Staff Augmentation</div>
+                    <div class="custom-select-option" data-value="training" role="option" aria-selected="false">Technical Training (Tech Vidyalaya)</div>
+                    <div class="custom-select-option" data-value="support" role="option" aria-selected="false">Managed Security / Support</div>
+                    <div class="custom-select-option" data-value="other" role="option" aria-selected="false">Other General Inquiry</div>
+                  </div>
+                  <input type="hidden" name="subject" id="con-subject" required value="">
+                </div>
+                <div class="validation-error" id="con-subject-error">Please select a primary architecture.</div>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="con-msg">Project Goals / Details *</label>
+              <textarea id="con-msg" class="form-textarea" required placeholder="Describe your data volume, timeline parameters, or PoC requirements..."></textarea>
+              <div class="validation-error" id="con-msg-error">Please describe your project goals.</div>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 10px;">Dispatch Inquiry <i class="fa fa-paper-plane"></i></button>
+          </form>
+        </div>
+
+        <!-- Telemetry Dispatch Loader -->
+        <div class="submit-loader" id="contact-submit-loader">
+          <div class="submit-loader-spinner"></div>
+          <div class="submit-loader-text" id="contact-loader-text">Initializing telemetry handshake...</div>
+          <div class="submit-progress-container">
+            <div class="submit-progress-bar"></div>
+          </div>
+        </div>
+
+        <!-- Success screen -->
+        <div id="contact-success-overlay">
+          <i class="fa-solid fa-circle-check"></i>
+          <h2 style="font-size: 1.8rem;">Inquiry Handshake Established!</h2>
+          <p id="success-ticket-details" style="color: var(--text-secondary); line-height: 1.6;">
+            Your project inquiry has been queued. Ticket ID: KPRO-XXXXX. An operations architect will contact you within 24 hours to schedule a deep-dive call.
+          </p>
+          <button type="button" class="btn btn-secondary" id="contact-reset-btn" style="margin-top: 10px; width: 100%;">Submit Another Request</button>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQs Accordion -->
+  <section class="section faq-section" id="faqs">
+    <div class="container">
+      <div class="section-title-wrap" data-reveal>
+        <span class="section-subtitle">Common Questions</span>
+        <h2 class="section-title">Support & FAQ Index</h2>
+      </div>
+
+      <!-- FAQ Search -->
+      <div class="faq-search-bar" data-reveal>
+        <i class="fa fa-search faq-search-icon"></i>
+        <input type="text" id="faq-search" class="faq-search-input" placeholder="Search FAQs by keywords..." onkeyup="filterFAQs()">
+      </div>
+
+      <div class="faq-list">
+        
+        <div class="glass-card faq-item" data-reveal>
+          <button class="faq-trigger" onclick="toggleFAQ(this)">
+            What is Kpro's True Fixed Cost Model?
+            <i class="fa fa-chevron-down"></i>
+          </button>
+          <div class="faq-content">
+            Under this model, Kpro absorbs all scope implementation risks. We spend significant scoping hours before writing code to establish firm deliverables and pricing. If challenges require extra developers or extended timelines, Kpro absorbs the cost, ensuring your budget remains 100% predictable.
+          </div>
+        </div>
+
+        <div class="glass-card faq-item" data-reveal style="transition-delay: 0.05s;">
+          <button class="faq-trigger" onclick="toggleFAQ(this)">
+            Do you support hybrid cloud environments?
+            <i class="fa fa-chevron-down"></i>
+          </button>
+          <div class="faq-content">
+            Yes, our Cloud Engineering teams design setups that bridge on-premise databases (Hadoop/local SQL) with public clouds (AWS, GCP, Azure). We also run custom computer vision models locally on edge cards like NVIDIA Jetson while pushing telemetry up to secure dashboards.
+          </div>
+        </div>
+
+        <div class="glass-card faq-item" data-reveal style="transition-delay: 0.1s;">
+          <button class="faq-trigger" onclick="toggleFAQ(this)">
+            How long does a standard Proof of Concept (PoC) take?
+            <i class="fa fa-chevron-down"></i>
+          </button>
+          <div class="faq-content">
+            Standard PoC projects are designed to demonstrate technical feasibility and are generally delivered in 4 to 6 weeks. This includes basic smart contract designs, simple streaming pipelines, or preliminary machine learning accuracy tests.
+          </div>
+        </div>
+
+        <div class="glass-card faq-item" data-reveal style="transition-delay: 0.15s;">
+          <button class="faq-trigger" onclick="toggleFAQ(this)">
+            Does Kpro provide long-term managed support?
+            <i class="fa fa-chevron-down"></i>
+          </button>
+          <div class="faq-content">
+            Yes, upon successful project handover, clients can engage our 24/7 managed services. We monitor cluster performance, audit smart contracts periodically, re-train ML parameters, and offer direct support tickets via our client portal.
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <div id="site-footer"></div>
+
+  <script type="module" src="js/main.js"></script>
+  <script type="module" src="js/contact.js"></script>
+</body>
+</html>

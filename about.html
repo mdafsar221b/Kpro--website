@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="img/logo.svg" type="image/svg+xml">
+  <!-- Open Graph / Social Media -->
+  <meta property="og:title" content="About Us | Kpro Solutions Pvt. Ltd.">
+  <meta property="og:description" content="Learn about Kpro Solutions Pvt. Ltd., founded in 2014. Explore our journey, team culture, and our signature outcome-based True Fixed Cost Model.">
+  <meta property="og:url" content="https://www.kpro.co.in/about.html">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://www.kpro.co.in/img/logo.svg">
+  <meta property="og:site_name" content="Kpro Solutions">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="About Us | Kpro Solutions Pvt. Ltd.">
+  <meta name="twitter:description" content="Learn about Kpro Solutions Pvt. Ltd., founded in 2014. Explore our journey, team culture, and our signature outcome-based True Fixed Cost Model.">
+  <link rel="canonical" href="https://www.kpro.co.in/about.html">
+  <meta name="description"
+    content="Learn about Kpro Solutions Pvt. Ltd., founded in 2014. Explore our journey, team culture, and our signature outcome-based True Fixed Cost Model.">
+  <title>About Us | Kpro Solutions Pvt. Ltd.</title>
+  
+  <!-- Structured Data (JSON-LD) for Search & LLM Engines -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "AboutPage",
+        "@id": "https://www.kpro.co.in/about.html#webpage",
+        "url": "https://www.kpro.co.in/about.html",
+        "name": "About Us | Kpro Solutions Pvt. Ltd.",
+        "description": "Learn about Kpro Solutions Pvt. Ltd., our core engineering principles, client team culture, and outcome-based True Fixed Cost Model.",
+        "breadcrumb": {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://www.kpro.co.in"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "About Us",
+              "item": "https://www.kpro.co.in/about.html"
+            }
+          ]
+        }
+      }
+    ]
+  }
+  </script>
+
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Performance: early connection hints -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <style>
+    .about-hero {
+      padding-top: 160px;
+      padding-bottom: 80px;
+      background: linear-gradient(180deg, var(--bg-dark) 0%, var(--bg-darker) 100%);
+      text-align: center;
+    }
+
+    /* Milestones Timeline */
+    .timeline-container {
+      position: relative;
+      max-width: 800px;
+      margin: 60px auto 0 auto;
+      padding: 0 20px;
+    }
+
+    .timeline-container::after {
+      content: '';
+      position: absolute;
+      width: 2px;
+      background: var(--glass-border);
+      top: 0;
+      bottom: 0;
+      left: 50%;
+      margin-left: -1px;
+    }
+
+    .timeline-block {
+      position: relative;
+      margin-bottom: 50px;
+      width: 50%;
+      padding-right: 40px;
+    }
+
+    .timeline-block:nth-child(even) {
+      left: 50%;
+      padding-right: 0;
+      padding-left: 40px;
+    }
+
+    .timeline-badge {
+      position: absolute;
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      background: var(--accent-cyan);
+      border: 3px solid var(--bg-darker);
+      right: -8px;
+      top: 15px;
+      z-index: 5;
+      box-shadow: 0 0 10px var(--accent-cyan);
+    }
+
+    .timeline-block:nth-child(even) .timeline-badge {
+      left: -8px;
+    }
+
+    .timeline-card {
+      padding: 24px;
+    }
+
+    .timeline-year {
+      font-family: var(--font-heading);
+      font-size: 1.3rem;
+      font-weight: 800;
+      color: var(--accent-cyan);
+      margin-bottom: 8px;
+    }
+
+    .timeline-title {
+      font-size: 1.1rem;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+
+    .timeline-desc {
+      font-size: 0.9rem;
+      color: var(--text-secondary);
+      line-height: 1.5;
+    }
+
+    /* Values Grid */
+    .values-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+      margin-top: 50px;
+    }
+
+    .value-card {
+      padding: 35px 25px;
+      text-align: center;
+    }
+
+    .value-card i {
+      font-size: 2.2rem;
+      color: var(--accent-mint);
+      margin-bottom: 20px;
+      display: inline-block;
+    }
+
+    /* Fixed Cost Section specific layout */
+    .model-explanation-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 50px;
+      align-items: center;
+    }
+
+    @media (max-width: 768px) {
+      .timeline-container::after {
+        left: 20px;
+      }
+
+      .timeline-block {
+        width: 100%;
+        padding-left: 40px;
+        padding-right: 0;
+        margin-bottom: 30px;
+      }
+
+      .timeline-block:nth-child(even) {
+        left: 0;
+      }
+
+      .timeline-badge {
+        left: 12px !important;
+      }
+
+      .values-grid,
+      .model-explanation-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    /* Leadership Team Styles */
+    .team-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 30px;
+      margin-top: 50px;
+    }
+
+    .team-card {
+      padding: 30px 20px;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      transition: var(--transition-normal);
+      border: 1px solid var(--glass-border);
+      height: 100%;
+    }
+
+    .team-card:hover {
+      transform: translateY(-8px);
+      border-color: var(--accent-cyan);
+      box-shadow: var(--shadow-neon-cyan);
+    }
+
+    .team-avatar-wrap {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--accent-cyan-glow), var(--accent-mint-glow));
+      border: 2px solid var(--accent-cyan);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 20px;
+      box-shadow: 0 0 15px rgba(6, 182, 212, 0.15);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .team-avatar-initials {
+      font-family: var(--font-heading);
+      font-size: 1.8rem;
+      font-weight: 800;
+      background: linear-gradient(135deg, var(--accent-cyan), var(--accent-mint));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .team-name {
+      font-size: 1.25rem;
+      font-weight: 700;
+      margin-bottom: 6px;
+      color: var(--text-primary);
+    }
+
+    .team-role {
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--accent-cyan);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 12px;
+    }
+
+    .team-bio {
+      font-size: 0.88rem;
+      color: var(--text-muted);
+      line-height: 1.5;
+      margin-bottom: 20px;
+      flex-grow: 1;
+    }
+
+    .team-linkedin {
+      font-size: 0.9rem;
+      color: var(--text-secondary);
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      transition: var(--transition-fast);
+    }
+
+    .team-linkedin:hover {
+      color: var(--accent-cyan);
+    }
+
+    @media (max-width: 1200px) {
+      .team-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+
+    @media (max-width: 992px) {
+      .team-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 576px) {
+      .team-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Background Orbs -->
+  <div class="glow-orb orb-cyan" style="top: 20%; left: -60px;"></div>
+  <div class="glow-orb orb-mint" style="top: 70%; right: -60px;"></div>
+
+  <div id="site-header"></div>
+
+  <!-- About Hero -->
+  <section class="about-hero">
+    <div class="container" data-reveal>
+      <span class="badge">Our Identity</span>
+      <h1 class="section-title" style="font-size: 3rem; margin-bottom: 20px;">We Architect Enterprise Progress</h1>
+      <p style="max-width: 700px; margin: 0 auto; color: var(--text-secondary); font-size: 1.1rem;">
+        Founded in 2014, Kpro Solutions is a group of data science geeks, Big Data hackers, IoT experts, and Blockchain
+        evangelists dedicated to delivering clear business value.
+      </p>
+    </div>
+  </section>
+
+  <!-- History & Philosophy Section -->
+  <section class="section">
+    <div class="container">
+      <div style="max-width: 800px; margin: 0 auto; text-align: center;" data-reveal>
+        <h2 style="font-size: 2rem; margin-bottom: 20px;">The Kpro Philosophy</h2>
+        <p style="color: var(--text-secondary); font-size: 1.05rem; line-height: 1.8; margin-bottom: 30px;">
+          Traditional technology consulting models are built on ambiguity, leading to project delays, scope creep, and
+          runaway invoices. Kpro Solutions was structured from day one to reverse this pattern. We believe in providing
+          robust architectures, predictable financials, and deep data insight.
+        </p>
+      </div>
+
+      <div class="values-grid">
+        <div class="glass-card value-card" data-reveal>
+          <i class="fa-solid fa-code-commit"></i>
+          <h3 style="margin-bottom: 12px;">Engineering Accountability</h3>
+          <p style="font-size: 0.9rem; color: var(--text-secondary);">We write modular, heavily documented, and
+            standard-compliant code, handing over clean files and full ownership.</p>
+        </div>
+
+        <div class="glass-card value-card" data-reveal style="transition-delay: 0.1s;">
+          <i class="fa-solid fa-bullseye"></i>
+          <h3 style="margin-bottom: 12px;">Outcome Focused</h3>
+          <p style="font-size: 0.9rem; color: var(--text-secondary);">We align scoping criteria directly with business
+            ROI metrics rather than simply working through check-box tasks.</p>
+        </div>
+
+        <div class="glass-card value-card" data-reveal style="transition-delay: 0.2s;">
+          <i class="fa-solid fa-people-group"></i>
+          <h3 style="margin-bottom: 12px;">True Collaboration</h3>
+          <p style="font-size: 0.9rem; color: var(--text-secondary);">We embed with client internal teams, sharing
+            telemetry skills, providing managed training, and enabling independence.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Leadership Section -->
+  <section class="section" id="leadership" style="background-color: var(--bg-darker); border-top: 1px solid var(--glass-border);">
+    <div class="container">
+      <div class="section-title-wrap" data-reveal>
+        <span class="section-subtitle">Our Leadership</span>
+        <h2 class="section-title">Executive Board &amp; Directors</h2>
+      </div>
+
+      <div class="team-grid">
+        <!-- Leader 1: Alok Ranjan Ojha -->
+        <div class="glass-card team-card" data-reveal>
+          <div class="team-avatar-wrap">
+            <img src="/img/alok-ranjan.png" alt="Alok Ranjan Ojha" style="width: 100%; height: 100%; object-fit: cover;">
+          </div>
+          <h3 class="team-name">Alok Ranjan Ojha</h3>
+          <p class="team-role">Founder &amp; Director</p>
+          <p class="team-bio">Spearheading corporate vision, strategic growth alliances, and high-impact delivery execution.</p>
+          <a href="https://www.linkedin.com/in/alok-ranjan-ojha/" target="_blank" rel="noopener noreferrer" class="team-linkedin">
+            <i class="fa-brands fa-linkedin"></i> LinkedIn
+          </a>
+        </div>
+
+
+        <!-- Leader 3: Bharat Shetty -->
+        <div class="glass-card team-card" data-reveal style="transition-delay: 0.2s;">
+          <div class="team-avatar-wrap">
+            <div class="team-avatar-initials">BS</div>
+          </div>
+          <h3 class="team-name">Bharat Shetty</h3>
+          <p class="team-role">Director &amp; Co-Founder</p>
+          <p class="team-bio">Leading global operations, client engagement lifecycles, and outcome alignment parameters.</p>
+          <a href="https://www.linkedin.com/in/bharatshetty/" target="_blank" rel="noopener noreferrer" class="team-linkedin">
+            <i class="fa-brands fa-linkedin"></i> LinkedIn
+          </a>
+        </div>
+
+        <!-- Leader 4: Rupak Sriwastwa -->
+        <div class="glass-card team-card" data-reveal style="transition-delay: 0.3s;">
+          <div class="team-avatar-wrap">
+            <div class="team-avatar-initials">RS</div>
+          </div>
+          <h3 class="team-name">Rupak Sriwastwa</h3>
+          <p class="team-role">Director &amp; Co-Founder</p>
+          <p class="team-bio">Overseeing database lakehouses, big data streaming pipelines, and infrastructure automation.</p>
+          <a href="https://www.linkedin.com/in/rupaksriwastwa/" target="_blank" rel="noopener noreferrer" class="team-linkedin">
+            <i class="fa-brands fa-linkedin"></i> LinkedIn
+          </a>
+        </div>
+
+        <!-- Leader 5: Sushma Shukla -->
+        <div class="glass-card team-card" data-reveal>
+          <div class="team-avatar-wrap">
+            <div class="team-avatar-initials">SS</div>
+          </div>
+          <h3 class="team-name">Sushma Shukla</h3>
+          <p class="team-role">Director of Human Resources</p>
+          <p class="team-bio">Directing talent acquisition, engineering team onboarding, and internal corporate training operations.</p>
+          <a href="https://www.linkedin.com/in/sushma-shukla-804b0a165/" target="_blank" rel="noopener noreferrer" class="team-linkedin">
+            <i class="fa-brands fa-linkedin"></i> LinkedIn
+          </a>
+        </div>
+
+        <!-- Leader: Priti Kumari -->
+        <div class="glass-card team-card" data-reveal style="transition-delay: 0.1s;">
+          <div class="team-avatar-wrap">
+            <div class="team-avatar-initials">PK</div>
+          </div>
+          <h3 class="team-name">Priti Kumari</h3>
+          <p class="team-role">HR Leader</p>
+          <p class="team-bio">Spearheading talent acquisition, human capital strategy, and engineering team operations.</p>
+          <a href="https://www.linkedin.com/in/priti-kumari-3b6b9b391/?isSelfProfile=false" target="_blank" rel="noopener noreferrer" class="team-linkedin">
+            <i class="fa-brands fa-linkedin"></i> LinkedIn
+          </a>
+        </div>
+
+        <!-- Leader 6: Smita Kashyap -->
+        <div class="glass-card team-card" data-reveal style="transition-delay: 0.1s;">
+          <div class="team-avatar-wrap">
+            <div class="team-avatar-initials">SK</div>
+          </div>
+          <h3 class="team-name">Smita Kashyap</h3>
+          <p class="team-role">Director of Finance</p>
+          <p class="team-bio">Managing enterprise accounting, financial scoping predictability, and cost budgeting models.</p>
+          <a href="https://www.linkedin.com/in/smita-kashyap-b24935282/" target="_blank" rel="noopener noreferrer" class="team-linkedin">
+            <i class="fa-brands fa-linkedin"></i> LinkedIn
+          </a>
+        </div>
+
+        <!-- Leader 7: Ritu Raj -->
+        <div class="glass-card team-card" data-reveal style="transition-delay: 0.2s;">
+          <div class="team-avatar-wrap">
+            <div class="team-avatar-initials">RR</div>
+          </div>
+          <h3 class="team-name">Ritu Raj</h3>
+          <p class="team-role">Director of Analytics</p>
+          <p class="team-bio">Engineering time-series forecasts, computer vision algorithms, and predictive ML systems.</p>
+          <a href="https://www.linkedin.com/in/ritu-raj-3a001b34b/" target="_blank" rel="noopener noreferrer" class="team-linkedin">
+            <i class="fa-brands fa-linkedin"></i> LinkedIn
+          </a>
+        </div>
+
+        <!-- Leader 8: Priyanka Shukla -->
+        <div class="glass-card team-card" data-reveal style="transition-delay: 0.3s;">
+          <div class="team-avatar-wrap">
+            <div class="team-avatar-initials">PS</div>
+          </div>
+          <h3 class="team-name">Priyanka Shukla</h3>
+          <p class="team-role">Director of SaaS Products</p>
+          <p class="team-bio">Spearheading product lifecycles, ATS profiling engines, and responsive portal development (BuildMyCV).</p>
+          <a href="https://www.linkedin.com/in/priyanka-shukla-buildmycv/" target="_blank" rel="noopener noreferrer" class="team-linkedin">
+            <i class="fa-brands fa-linkedin"></i> LinkedIn
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Milestones Timeline Section -->
+  <section class="section" style="background-color: var(--bg-dark);">
+    <div class="container">
+      <div class="section-title-wrap" data-reveal>
+        <span class="section-subtitle">Our Timeline</span>
+        <h2 class="section-title">Corporate Milestones</h2>
+      </div>
+
+      <div class="timeline-container">
+        <!-- 2014 -->
+        <div class="timeline-block" data-reveal>
+          <div class="timeline-badge"></div>
+          <div class="glass-card timeline-card">
+            <div class="timeline-year">2014</div>
+            <h4 class="timeline-title">Company Founded</h4>
+            <p class="timeline-desc">Kpro Solutions was incorporated in Bengaluru, India with a core focus on custom
+              analytics services and database designs.</p>
+          </div>
+        </div>
+
+        <!-- 2016 -->
+        <div class="timeline-block" data-reveal>
+          <div class="timeline-badge"></div>
+          <div class="glass-card timeline-card">
+            <div class="timeline-year">2016</div>
+            <h4 class="timeline-title">Big Data & IoT Integration</h4>
+            <p class="timeline-desc">Scaled operations to support real-time data stream pipelines and edge sensor
+              telemetry integrations, serving logistics enterprises.</p>
+          </div>
+        </div>
+
+        <!-- 2019 -->
+        <div class="timeline-block" data-reveal>
+          <div class="timeline-badge"></div>
+          <div class="glass-card timeline-card">
+            <div class="timeline-year">2019</div>
+            <h4 class="timeline-title">Launch of Proprietary Solutions</h4>
+            <p class="timeline-desc">Released specialized analytics products including ThirdEye (automated vision tool),
+              Supply Chain Analytics, and Threat Analytics UEBA engine.</p>
+          </div>
+        </div>
+
+        <!-- 2022 -->
+        <div class="timeline-block" data-reveal>
+          <div class="timeline-badge"></div>
+          <div class="glass-card timeline-card">
+            <div class="timeline-year">2022</div>
+            <h4 class="timeline-title">Decentralized Ledgers Expansion</h4>
+            <p class="timeline-desc">Integrated advanced blockchain architecture services, helping banking and supply
+              chain clients structure high-trust ecosystems.</p>
+          </div>
+        </div>
+
+        <!-- 2026 -->
+        <div class="timeline-block" data-reveal>
+          <div class="timeline-badge"></div>
+          <div class="glass-card timeline-card">
+            <div class="timeline-year">2026</div>
+            <h4 class="timeline-title">Renovation and Global Delivery</h4>
+            <p class="timeline-desc">Modernized product lines, upgraded machine learning pipelines, and standardized the
+              outcome-based "True Fixed Cost Model" globally.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Deep Dive: True Fixed Cost Model -->
+  <section class="section" id="fixed-cost">
+    <div class="container model-explanation-grid">
+      <div data-reveal>
+        <span class="badge"
+          style="background-color: var(--accent-mint-glow); color: var(--accent-mint); border-color: var(--accent-mint);">Engagement
+          Model</span>
+        <h2 style="font-size: 2.2rem; margin-bottom: 20px;">Why We Champion the "True Fixed Cost Model"</h2>
+        <p style="color: var(--text-secondary); margin-bottom: 16px; line-height: 1.7;">
+          Hourly billing aligns a consultancy's financial motivations against the client's goal. The longer the
+          developers take, the more the consultancy profits.
+        </p>
+        <p style="color: var(--text-secondary); margin-bottom: 24px; line-height: 1.7;">
+          Under Kpro's outcome-based model, we invest significant architecture hours upfront to clarify scopes, define
+          schemas, specify delivery milestones, and sign off on a guaranteed cost.
+        </p>
+        <a href="contact.html" class="btn btn-primary">Discuss Your Scoping Needs</a>
+      </div>
+
+      <div style="display: flex; flex-direction: column; gap: 24px;" data-reveal>
+        <div class="glass-card" style="padding: 24px;">
+          <h4 style="color: var(--accent-cyan); margin-bottom: 8px;"><i class="fa fa-shield-halved"></i> 1. Risk
+            Absorption</h4>
+          <p style="font-size: 0.9rem; color: var(--text-secondary);">If unexpected engineering challenges appear during
+            sprint development, Kpro absorbs all extra labor expenses, not the client.</p>
+        </div>
+        <div class="glass-card" style="padding: 24px;">
+          <h4 style="color: var(--accent-cyan); margin-bottom: 8px;"><i class="fa fa-calendar-check"></i> 2. Strict
+            Delivery Commitments</h4>
+          <p style="font-size: 0.9rem; color: var(--text-secondary);">Scopes are tethered to chronological calendar
+            milestone reviews. We execute with extreme discipline to maintain delivery timelines.</p>
+        </div>
+        <div class="glass-card" style="padding: 24px;">
+          <h4 style="color: var(--accent-cyan); margin-bottom: 8px;"><i class="fa fa-chart-line"></i> 3. Measurable
+            Value</h4>
+          <p style="font-size: 0.9rem; color: var(--text-secondary);">Because project metrics are detailed precisely
+            before writing code, stakeholders can calculate exact ROI projections beforehand.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div id="site-footer"></div>
+
+  <script type="module" src="js/main.js"></script>
+</body>
+
+</html>

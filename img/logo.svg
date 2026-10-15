@@ -1,0 +1,36 @@
+<svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="logo-grad-cyan" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00f0ff" />
+      <stop offset="100%" stop-color="#0072ff" />
+    </linearGradient>
+    <linearGradient id="logo-grad-mint" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00f5a0" />
+      <stop offset="100%" stop-color="#00b8ff" />
+    </linearGradient>
+    <filter id="neon-glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="4" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+  <!-- Background hex grid pattern subtle hint -->
+  <path d="M50 10 L85 30 L85 70 L50 90 L15 70 L15 30 Z" stroke="rgba(255,255,255,0.05)" stroke-width="2" />
+  
+  <!-- Stylized K -->
+  <!-- Vertical-ish base nodes -->
+  <path d="M30 25 V75" stroke="url(#logo-grad-cyan)" stroke-width="10" stroke-linecap="round" />
+  
+  <!-- Diagonal branching arms -->
+  <path d="M30 50 L65 25" stroke="url(#logo-grad-mint)" stroke-width="10" stroke-linecap="round" />
+  <path d="M30 50 L65 75" stroke="url(#logo-grad-mint)" stroke-width="10" stroke-linecap="round" />
+  
+  <!-- Interconnecting nodes -->
+  <circle cx="30" cy="50" r="7" fill="#ffffff" filter="url(#neon-glow)" />
+  <circle cx="65" cy="25" r="5" fill="#00f5a0" />
+  <circle cx="65" cy="75" r="5" fill="#00f5a0" />
+  <circle cx="30" cy="25" r="5" fill="#0072ff" />
+  <circle cx="30" cy="75" r="5" fill="#0072ff" />
+</svg>

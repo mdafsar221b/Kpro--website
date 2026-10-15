@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="img/logo.svg" type="image/svg+xml">
+  <!-- Open Graph / Social Media -->
+  <meta property="og:title" content="Training | Kpro Solutions Pvt. Ltd.">
+  <meta property="og:description" content="Kpro offers industry-leading training programs in GenAI, Cloud & DevOps, Big Data, Blockchain, and IoT for professionals and enterprises.">
+  <meta property="og:url" content="https://www.kpro.co.in/training.html">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://www.kpro.co.in/img/logo.svg">
+  <meta property="og:site_name" content="Kpro Solutions">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Training | Kpro Solutions Pvt. Ltd.">
+  <meta name="twitter:description" content="Kpro offers industry-leading training programs in GenAI, Cloud & DevOps, Big Data, Blockchain, and IoT for professionals and enterprises.">
+  <link rel="canonical" href="https://www.kpro.co.in/training.html">
+  <meta name="description" content="Kpro's Upskilling Ecosystem: Outcomes-driven technical training programs for corporate engineering teams and academic placement readiness for engineering colleges.">
+  <title>Training Ecosystem | Kpro Solutions Pvt. Ltd.</title>
+  
+  <!-- Structured Data (JSON-LD) for Search & LLM Engines -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebPage",
+        "@id": "https://www.kpro.co.in/training.html#webpage",
+        "url": "https://www.kpro.co.in/training.html",
+        "name": "Training Ecosystem | Kpro Solutions Pvt. Ltd.",
+        "description": "Kpro offers industry-leading training programs in GenAI, Cloud & DevOps, Big Data, Blockchain, and IoT.",
+        "breadcrumb": {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://www.kpro.co.in"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Training",
+              "item": "https://www.kpro.co.in/training.html"
+            }
+          ]
+        }
+      },
+      {
+        "@type": "Course",
+        "name": "Corporate Engineering Upskilling",
+        "description": "High-impact bootcamps for engineering teams covering Generative AI integration, Cloud DevOps migration, and Edge IoT architectures.",
+        "provider": {
+          "@type": "Organization",
+          "name": "Kpro Solutions Pvt. Ltd.",
+          "url": "https://www.kpro.co.in"
+        }
+      },
+      {
+        "@type": "Course",
+        "name": "Academic Placement Readiness",
+        "description": "Intensive college training bootcamps, resume structuring guides, mock tech interviews, and dynamic placement preparation workshops.",
+        "provider": {
+          "@type": "Organization",
+          "name": "Kpro Solutions Pvt. Ltd.",
+          "url": "https://www.kpro.co.in"
+        }
+      }
+    ]
+  }
+  </script>
+
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Performance: early connection hints -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <style>
+    .training-hero {
+      padding-top: 160px;
+      padding-bottom: 60px;
+      background: linear-gradient(180deg, var(--bg-dark) 0%, var(--bg-darker) 100%);
+      text-align: center;
+    }
+
+    /* Training tracks grid */
+    .tracks-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      margin-top: 40px;
+      margin-bottom: 80px;
+    }
+
+    .track-card {
+      padding: 50px 40px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 100%;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .track-card::before {
+      content: '';
+      position: absolute;
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      background: var(--accent-cyan-glow);
+      filter: blur(80px);
+      top: -50px;
+      right: -50px;
+      opacity: 0.15;
+      transition: all var(--transition-normal);
+    }
+
+    .track-card:hover::before {
+      opacity: 0.3;
+      transform: scale(1.2);
+    }
+
+    .track-icon {
+      font-size: 3rem;
+      margin-bottom: 24px;
+      background: linear-gradient(135deg, var(--accent-cyan) 0%, var(--accent-mint) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      display: inline-block;
+    }
+
+    .track-features {
+      margin: 24px 0 35px 0;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+
+    .track-feature-item {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-size: 0.95rem;
+      color: var(--text-secondary);
+    }
+
+    .track-feature-item i {
+      color: var(--accent-mint);
+    }
+
+    /* Stats Grid */
+    .stats-section {
+      background: rgba(0, 0, 0, 0.2);
+      border-top: 1px solid var(--glass-border);
+      border-bottom: 1px solid var(--glass-border);
+      padding: 60px 0;
+      margin-bottom: 80px;
+    }
+
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 30px;
+      text-align: center;
+    }
+
+    .stat-number {
+      font-family: var(--font-heading);
+      font-size: 2.8rem;
+      font-weight: 800;
+      background: linear-gradient(135deg, var(--accent-cyan) 0%, var(--accent-mint) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 10px;
+    }
+
+    .stat-label {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    /* Scoping Form Container */
+    .form-container {
+      max-width: 700px;
+      margin: 0 auto 100px auto;
+      padding: 50px 40px;
+    }
+
+    .scoping-form {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+      margin-top: 30px;
+    }
+
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .form-group label {
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--text-secondary);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .form-input, .form-select, .form-textarea {
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid var(--glass-border);
+      border-radius: var(--border-radius-sm);
+      padding: 12px 16px;
+      color: var(--text-primary);
+      font-size: 0.95rem;
+      transition: all var(--transition-normal);
+    }
+
+    .form-input:focus, .form-select:focus, .form-textarea:focus {
+      outline: none;
+      border-color: var(--accent-cyan);
+      background: rgba(255, 255, 255, 0.05);
+      box-shadow: 0 0 10px rgba(0, 240, 255, 0.15);
+    }
+
+    .form-select option {
+      background: var(--bg-darker);
+      color: var(--text-primary);
+    }
+
+    @media (max-width: 992px) {
+      .tracks-grid {
+        grid-template-columns: 1fr;
+      }
+      .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .form-row {
+        grid-template-columns: 1fr;
+      }
+      .stats-grid {
+        grid-template-columns: 1fr;
+      }
+      .form-container {
+        padding: 30px 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Background Orbs -->
+  <div class="glow-orb orb-cyan" style="top: 15%; left: -60px;"></div>
+  <div class="glow-orb orb-mint" style="top: 60%; right: -60px;"></div>
+
+  <div id="site-header"></div>
+
+  <!-- Hero Section -->
+  <section class="training-hero">
+    <div class="container" data-reveal>
+      <span class="badge">Upskilling Ecosystem</span>
+      <h1 class="section-title" style="font-size: 3rem; margin-bottom: 20px;">Corporate & Academic Training</h1>
+      <p style="max-width: 700px; margin: 0 auto; color: var(--text-secondary); font-size: 1.1rem;">
+        Bridging the gap between engineering foundations and bleeding-edge industry architectures. We provide tailored training tracks for scaling organizations and engineering institutions.
+      </p>
+    </div>
+  </section>
+
+  <!-- Track Cards Showcase -->
+  <section class="section" style="padding-top: 20px;">
+    <div class="container">
+      <div class="tracks-grid">
+        <!-- Corporate Track -->
+        <div class="glass-card track-card" data-reveal>
+          <div>
+            <div class="track-icon"><i class="fa-solid fa-briefcase"></i></div>
+            <h2 style="font-size: 1.8rem; margin-bottom: 16px;">Corporate Engineering Upskilling</h2>
+            <p style="color: var(--text-secondary); font-size: 1rem; line-height: 1.6;">
+              Custom bootcamps and intensive technical workshops designed for enterprise software teams. Accelerate tech stack migrations and bridge modern technology gaps.
+            </p>
+            <div class="track-features">
+              <div class="track-feature-item"><i class="fa fa-circle-check"></i> Advanced Big Data & Data Lakes integration</div>
+              <div class="track-feature-item"><i class="fa fa-circle-check"></i> Smart Contract architecture & security audits</div>
+              <div class="track-feature-item"><i class="fa fa-circle-check"></i> Enterprise AI, RAG & Multi-Agent orchestration</div>
+              <div class="track-feature-item"><i class="fa fa-circle-check"></i> Outcomes-driven agile development alignment</div>
+            </div>
+          </div>
+          <a href="corporate-training.html" class="btn btn-primary" style="align-self: flex-start;">Explore Corporate Program <i class="fa fa-arrow-right"></i></a>
+        </div>
+
+        <!-- College Track -->
+        <div class="glass-card track-card" data-reveal style="transition-delay: 0.1s;">
+          <div>
+            <div class="track-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+            <h2 style="font-size: 1.8rem; margin-bottom: 16px;">College Placement Readiness</h2>
+            <p style="color: var(--text-secondary); font-size: 1rem; line-height: 1.6;">
+              Comprehensive curriculum programs mapping student technical skills to active recruiter demands. Bring industry-level sandbox code directly into academic halls.
+            </p>
+            <div class="track-features">
+              <div class="track-feature-item"><i class="fa fa-circle-check"></i> Intensive placement preparation bootcamps</div>
+              <div class="track-feature-item"><i class="fa fa-circle-check"></i> Recruiter-ready ATS resume & portfolio building</div>
+              <div class="track-feature-item"><i class="fa fa-circle-check"></i> Live AI hackathons & micro-project challenges</div>
+              <div class="track-feature-item"><i class="fa fa-circle-check"></i> Direct integration pathways to corporate hiring</div>
+            </div>
+          </div>
+          <a href="college-training.html" class="btn btn-primary" style="align-self: flex-start;">Explore College Program <i class="fa fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Metrics Section -->
+  <section class="stats-section">
+    <div class="container">
+      <div class="stats-grid">
+        <div data-reveal>
+          <div class="stat-number">15+</div>
+          <div class="stat-label">Enterprise Clients</div>
+        </div>
+        <div data-reveal style="transition-delay: 0.1s;">
+          <div class="stat-number">10k+</div>
+          <div class="stat-label">Students Mentored</div>
+        </div>
+        <div data-reveal style="transition-delay: 0.2s;">
+          <div class="stat-number">98%</div>
+          <div class="stat-label">Placement Success</div>
+        </div>
+        <div data-reveal style="transition-delay: 0.3s;">
+          <div class="stat-number">50+</div>
+          <div class="stat-label">Syllabus Outlines</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Video Resources Section -->
+  <section class="section" style="background-color: var(--bg-dark); border-top: 1px solid var(--glass-border); border-bottom: 1px solid var(--glass-border);" id="tutorials">
+    <div class="container">
+      <div style="text-align: center; margin-bottom: 50px;" data-reveal>
+        <span class="section-subtitle">Video Resources</span>
+        <h2 style="font-size: var(--font-size-xl); margin-bottom: 12px;">Technical Training Tutorials</h2>
+        <p style="color: var(--text-secondary); max-width: 600px; margin: 0 auto; font-size: var(--font-size-base);">
+          Explore our video tutorials covering cloud platforms, modern software engineering stacks, and big data architectures.
+        </p>
+      </div>
+
+      <div class="videos-grid">
+        <!-- Blockchain -->
+        <div class="glass-card video-card" data-reveal>
+          <div class="video-wrapper">
+            <iframe src="https://www.youtube-nocookie.com/embed/7bIEN-T0kQA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          <div class="video-info">
+            <h3 class="video-title">Blockchain</h3>
+            <p class="video-desc">Overview of decentralized networks, cryptographic ledgers, and EVM contract mechanics.</p>
+          </div>
+        </div>
+
+        <!-- Data Science -->
+        <div class="glass-card video-card" data-reveal style="transition-delay: 0.1s;">
+          <div class="video-wrapper">
+            <iframe src="https://www.youtube-nocookie.com/embed/EPuGa9B6oK0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          <div class="video-info">
+            <h3 class="video-title">Data Science</h3>
+            <p class="video-desc">Understanding statistics, mathematical profiling, and predictive business model architectures.</p>
+          </div>
+        </div>
+
+        <!-- Azure Certification -->
+        <div class="glass-card video-card" data-reveal style="transition-delay: 0.2s;">
+          <div class="video-wrapper">
+            <iframe src="https://www.youtube.com/embed/Hc6aU5Gy6QQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          <div class="video-info">
+            <h3 class="video-title">Azure Certification</h3>
+            <p class="video-desc">Deep-dive training session on Microsoft Azure core cloud structures and exam pathways.</p>
+          </div>
+        </div>
+
+        <!-- BigData Testing -->
+        <div class="glass-card video-card" data-reveal style="transition-delay: 0.3s;">
+          <div class="video-wrapper">
+            <iframe src="https://www.youtube-nocookie.com/embed/MX9Xl_dn_ZA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          <div class="video-info">
+            <h3 class="video-title">BigData Testing</h3>
+            <p class="video-desc">Strategies for validating distributed databases, Spark jobs, and file storage integrity.</p>
+          </div>
+        </div>
+
+        <!-- Introduction to Talend -->
+        <div class="glass-card video-card" data-reveal>
+          <div class="video-wrapper">
+            <iframe src="https://www.youtube-nocookie.com/embed/YvRjCeKglNA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          <div class="video-info">
+            <h3 class="video-title">Introduction to Talend</h3>
+            <p class="video-desc">Building robust ETL processes, source data integrations, and analytics warehouses.</p>
+          </div>
+        </div>
+
+        <!-- DevOps -->
+        <div class="glass-card video-card" data-reveal style="transition-delay: 0.1s;">
+          <div class="video-wrapper">
+            <iframe src="https://www.youtube-nocookie.com/embed/DRR4cqUNeFY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          <div class="video-info">
+            <h3 class="video-title">DevOps</h3>
+            <p class="video-desc">Overview of CI/CD orchestration pipelines, system automations, and server architectures.</p>
+          </div>
+        </div>
+
+        <!-- Introduction to AWS -->
+        <div class="glass-card video-card" data-reveal style="transition-delay: 0.2s;">
+          <div class="video-wrapper">
+            <iframe src="https://www.youtube.com/embed/jRj7TnSxpUQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          <div class="video-info">
+            <h3 class="video-title">Introduction to AWS</h3>
+            <p class="video-desc">Getting started with EC2 nodes, S3 buckets, networking subnets, and security setups.</p>
+          </div>
+        </div>
+
+        <!-- Cloudera -->
+        <div class="glass-card video-card" data-reveal style="transition-delay: 0.3s;">
+          <div class="video-wrapper">
+            <iframe src="https://www.youtube.com/embed/0vpaozd0wPI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          <div class="video-info">
+            <h3 class="video-title">Cloudera</h3>
+            <p class="video-desc">Managing big data clusters, Hadoop storage distribution systems, and analytical workloads.</p>
+          </div>
+        </div>
+      </div>
+      
+      <div style="text-align: center; margin-top: 50px;" data-reveal>
+        <a href="https://www.youtube.com/channel/UCcks4KEpT694r1Qj2gwTqyQ/featured?reload=9&disable_polymer=true" target="_blank" rel="noopener noreferrer" class="btn btn-outline">Visit Our YouTube Channel <i class="fa-brands fa-youtube"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Inquiry / Scoping Section -->
+  <section class="section" id="inquiry">
+    <div class="container">
+      <div class="glass-card form-container" data-reveal>
+        <div id="scoping-form-wrapper">
+          <div style="text-align: center; margin-bottom: 30px;">
+            <h2 style="font-size: 2rem; margin-bottom: 12px;">Scope Your Training Program</h2>
+            <p style="color: var(--text-secondary); font-size: 0.95rem;">
+              Whether you need to retrain a department or secure student job placements, we'll design a customized engagement track to achieve your targets.
+            </p>
+          </div>
+
+          <form class="scoping-form" id="scoping-form" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="scoping-name">Full Name *</label>
+                <input type="text" id="scoping-name" class="form-input" placeholder="e.g. Rahul Sharma" required>
+                <div class="validation-error" id="scoping-name-error" style="display:none; color:#ff4a5a; font-size:0.8rem; margin-top:4px;">Please enter your name.</div>
+              </div>
+              <div class="form-group">
+                <label for="scoping-email">Work Email *</label>
+                <input type="email" id="scoping-email" class="form-input" placeholder="e.g. rahul@organization.com" required>
+                <div class="validation-error" id="scoping-email-error" style="display:none; color:#ff4a5a; font-size:0.8rem; margin-top:4px;">Please enter a valid work email.</div>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="scoping-phone">Phone Number *</label>
+                <input type="tel" id="scoping-phone" class="form-input" placeholder="e.g. +91 98765 43210" required>
+                <div class="validation-error" id="scoping-phone-error" style="display:none; color:#ff4a5a; font-size:0.8rem; margin-top:4px;">Please enter your phone number.</div>
+              </div>
+              <div class="form-group">
+                <label for="scoping-org">Company / Institution *</label>
+                <input type="text" id="scoping-org" class="form-input" placeholder="e.g. RV College of Engineering" required>
+                <div class="validation-error" id="scoping-org-error" style="display:none; color:#ff4a5a; font-size:0.8rem; margin-top:4px;">Please enter your company or institution.</div>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="scoping-audience">Target Audience *</label>
+                <select id="scoping-audience" class="form-select" required>
+                  <option value="" disabled selected>Select program type...</option>
+                  <option value="corporate">Corporate Software Engineers</option>
+                  <option value="college">College Students / Placements</option>
+                  <option value="individual">Individual Professional Developers</option>
+                </select>
+                <div class="validation-error" id="scoping-audience-error" style="display:none; color:#ff4a5a; font-size:0.8rem; margin-top:4px;">Please select the target audience.</div>
+              </div>
+              <div class="form-group">
+                <label for="scoping-batch">Expected Batch Size *</label>
+                <select id="scoping-batch" class="form-select" required>
+                  <option value="" disabled selected>Select size range...</option>
+                  <option value="small">&lt; 15 participants</option>
+                  <option value="medium">15 - 50 participants</option>
+                  <option value="large">50 - 100 participants</option>
+                  <option value="enterprise">100+ participants</option>
+                </select>
+                <div class="validation-error" id="scoping-batch-error" style="display:none; color:#ff4a5a; font-size:0.8rem; margin-top:4px;">Please select expected batch size.</div>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="scoping-notes">Training Scoping &amp; Requirements *</label>
+              <textarea id="scoping-notes" class="form-textarea" rows="4" placeholder="Detail the technical stacks, duration, timeline parameters, and learning objectives..." required></textarea>
+              <div class="validation-error" id="scoping-notes-error" style="display:none; color:#ff4a5a; font-size:0.8rem; margin-top:4px;">Please describe your requirements (minimum 10 characters).</div>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="margin-top: 10px; padding: 14px 28px;">Submit Scoping Request <i class="fa-solid fa-paper-plane"></i></button>
+          </form>
+        </div>
+
+        <!-- Success Overlay -->
+        <div class="success-overlay" id="scoping-success-overlay" style="display: none; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 40px 20px;">
+          <div class="success-checkmark" style="font-size: 3.5rem; color: var(--accent-mint); margin-bottom: 20px; animation: scaleUp 0.4s ease;">
+            <i class="fa-solid fa-circle-check"></i>
+          </div>
+          <h3 style="font-size: 1.6rem; margin-bottom: 12px; font-family: var(--font-header);">Scoping Request Received!</h3>
+          <p id="scoping-success-msg" style="color: var(--text-secondary); max-width: 500px; font-size: 0.95rem; line-height: 1.6; margin-bottom: 24px;"></p>
+          <button type="button" class="btn btn-primary" id="scoping-reset-btn">Send Another Request</button>
+        </div>
+
+        <!-- Submit Loader -->
+        <div class="submit-loader" id="scoping-submit-loader" style="display: none; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 40px 20px;">
+          <div class="loader-spinner" style="border: 4px solid rgba(0, 242, 254, 0.1); border-top: 4px solid var(--accent-cyan); border-radius: 50%; width: 50px; height: 50px; animation: spin 1s linear infinite; margin-bottom: 20px;"></div>
+          <p id="scoping-loader-text" style="font-family: monospace; font-size: 0.9rem; color: var(--accent-cyan);"></p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <div id="site-footer"></div>
+
+  <script type="module" src="js/main.js"></script>
+  <script type="module" src="js/training.js"></script>
+</body>
+</html>

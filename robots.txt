@@ -1,0 +1,30 @@
+# robots.txt for Kpro Solutions - SEO & LLM Crawler Optimization
+
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /node_modules/
+Disallow: /dist/
+Disallow: /tests/
+
+# Explicitly allow AI / LLM search crawlers for RAG and indexing
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+# Point to sitemap
+Sitemap: https://www.kpro.co.in/sitemap.xml

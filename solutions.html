@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="img/logo.svg" type="image/svg+xml">
+  <!-- Open Graph / Social Media -->
+  <meta property="og:title" content="Solutions | Kpro Solutions Pvt. Ltd.">
+  <meta property="og:description" content="Discover Kpro's signature solutions: ThirdEye AI Computer Vision, SupplyChainAnalytics optimization, and Internal Security Threat UEBA analytics.">
+  <meta property="og:url" content="https://www.kpro.co.in/solutions.html">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://www.kpro.co.in/img/logo.svg">
+  <meta property="og:site_name" content="Kpro Solutions">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Solutions | Kpro Solutions Pvt. Ltd.">
+  <meta name="twitter:description" content="Discover Kpro's signature solutions: ThirdEye AI Computer Vision, SupplyChainAnalytics optimization, and Internal Security Threat UEBA analytics.">
+  <link rel="canonical" href="https://www.kpro.co.in/solutions.html">
+  <meta name="description" content="Discover Kpro's signature solutions: ThirdEye AI Computer Vision, SupplyChainAnalytics optimization, and Internal Security Threat UEBA analytics.">
+  <title>Solutions | Kpro Solutions Pvt. Ltd.</title>
+  
+  <!-- Structured Data (JSON-LD) for Search & LLM Engines -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebPage",
+        "@id": "https://www.kpro.co.in/solutions.html#webpage",
+        "url": "https://www.kpro.co.in/solutions.html",
+        "name": "Solutions | Kpro Solutions Pvt. Ltd.",
+        "description": "Discover Kpro's signature solutions: ThirdEye AI Computer Vision, SupplyChainAnalytics optimization, and Internal Security Threat UEBA analytics.",
+        "breadcrumb": {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://www.kpro.co.in"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Solutions",
+              "item": "https://www.kpro.co.in/solutions.html"
+            }
+          ]
+        }
+      },
+      {
+        "@type": "Service",
+        "name": "ThirdEye AI Defect Monitoring",
+        "provider": {
+          "@type": "Organization",
+          "name": "Kpro Solutions Pvt. Ltd."
+        },
+        "description": "Real-time edge computer vision scanning defect rates in assembly lines with custom threshold alerts."
+      },
+      {
+        "@type": "Service",
+        "name": "SupplyChain ML Optimization Solver",
+        "provider": {
+          "@type": "Organization",
+          "name": "Kpro Solutions Pvt. Ltd."
+        },
+        "description": "Stock tracking, customer demand predictions, safety stock boundaries, and linear programming solver engines."
+      },
+      {
+        "@type": "Service",
+        "name": "UEBA Threat Security Analytics",
+        "provider": {
+          "@type": "Organization",
+          "name": "Kpro Solutions Pvt. Ltd."
+        },
+        "description": "User and Entity Behavior Analytics monitoring anomalies, locking system parameters, and preventing data leakage."
+      }
+    ]
+  }
+  </script>
+
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Performance: early connection hints -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <style>
+    /* Solutions-specific css variables & styling */
+    .solutions-hero {
+      padding-top: 160px;
+      padding-bottom: 80px;
+      background: linear-gradient(180deg, var(--bg-dark) 0%, var(--bg-darker) 100%);
+      text-align: center;
+    }
+    
+    .sol-detail-section {
+      padding: 80px 0;
+      border-bottom: 1px solid var(--glass-border);
+    }
+    
+    .sol-detail-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      align-items: center;
+    }
+    
+    .sol-detail-grid.reverse {
+      direction: rtl;
+    }
+    .sol-detail-grid.reverse .sol-text-block {
+      direction: ltr;
+    }
+    
+    .sol-img-placeholder {
+      width: 100%;
+      height: 380px;
+      border-radius: var(--border-radius-md);
+      background: var(--bg-card);
+      border: 1px solid var(--glass-border);
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .tech-pill-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 24px;
+    }
+    
+    .tech-pill {
+      font-size: 0.8rem;
+      padding: 6px 12px;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid var(--glass-border);
+      border-radius: 4px;
+      color: var(--accent-cyan);
+    }
+    
+    /* Interactive Dashboard Simulator styles */
+    .dashboard-container {
+      margin-top: 100px;
+      padding: 40px;
+      background: var(--bg-dark);
+      border: 1px solid var(--glass-border);
+      border-radius: var(--border-radius-lg);
+      box-shadow: var(--shadow-card);
+    }
+    
+    .dashboard-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 30px;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    
+    .dashboard-tabs {
+      display: flex;
+      gap: 12px;
+    }
+    
+    .dash-tab-btn {
+      padding: 12px 20px;
+      font-family: var(--font-heading);
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid var(--glass-border);
+      color: var(--text-secondary);
+      border-radius: var(--border-radius-sm);
+      cursor: pointer;
+      font-weight: 600;
+      transition: var(--transition-fast);
+    }
+    
+    .dash-tab-btn.active {
+      background: var(--accent-cyan-glow);
+      border-color: var(--accent-cyan);
+      color: var(--text-primary);
+      box-shadow: var(--shadow-neon-cyan);
+    }
+    
+    .dashboard-body {
+      background: var(--bg-darker);
+      border: 1px solid var(--glass-border);
+      border-radius: var(--border-radius-md);
+      padding: 30px;
+      min-height: 400px;
+      position: relative;
+    }
+    
+    .dash-view {
+      display: none;
+      animation: fadeInUp 0.5s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+    }
+    .dash-view.active {
+      display: block;
+    }
+    
+    /* Simulator elements */
+    .sim-grid {
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: 30px;
+    }
+    
+    .sim-panel {
+      background: rgba(255, 255, 255, 0.02);
+      border: 1px solid var(--glass-border);
+      border-radius: var(--border-radius-sm);
+      padding: 20px;
+    }
+    
+    .sim-log-screen {
+      font-family: monospace;
+      font-size: 0.8rem;
+      background: #080d1a;
+      color: #00ff66;
+      padding: 16px;
+      border-radius: 4px;
+      height: 220px;
+      overflow-y: auto;
+      border: 1px solid rgba(0, 255, 102, 0.15);
+    }
+    
+    .sim-controls {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+    
+    .slider-group {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+    
+    .sim-slider {
+      width: 100%;
+      height: 6px;
+      background: var(--bg-dark);
+      border-radius: 3px;
+      outline: none;
+      -webkit-appearance: none;
+    }
+    .sim-slider::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      width: 16px;
+      height: 16px;
+      background: var(--accent-cyan);
+      border-radius: 50%;
+      cursor: pointer;
+      box-shadow: 0 0 10px var(--accent-cyan);
+    }
+    
+    /* Visualizations inside simulator */
+    .thirdeye-viewscreen {
+      position: relative;
+      width: 100%;
+      height: 250px;
+      background: #111;
+      border-radius: 4px;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .scan-line {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background: var(--accent-cyan);
+      box-shadow: 0 0 8px var(--accent-cyan);
+      animation: scan 3s linear infinite;
+    }
+    @keyframes scan {
+      0% { top: 0%; }
+      50% { top: 100%; }
+      100% { top: 0%; }
+    }
+    
+    .sim-box {
+      border: 2px solid #ff3333;
+      position: absolute;
+      padding: 4px 8px;
+      color: #ff3333;
+      font-family: monospace;
+      font-size: 0.75rem;
+      background: rgba(255,51,51,0.1);
+      border-radius: 2px;
+    }
+    
+    .status-indicator {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 12px;
+      border-radius: 50px;
+      font-size: 0.8rem;
+      font-weight: bold;
+    }
+    .status-ok {
+      background: rgba(0, 255, 102, 0.1);
+      color: #00ff66;
+      border: 1px solid #00ff66;
+    }
+    .status-warning {
+      background: rgba(255, 50, 50, 0.1);
+      color: #ff3232;
+      border: 1px solid #ff3232;
+    }
+    
+    @media (max-width: 992px) {
+      .sol-detail-grid, .sol-detail-grid.reverse {
+        grid-template-columns: 1fr;
+        text-align: center;
+        direction: ltr;
+      }
+      .sim-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Background Orbs -->
+  <div class="glow-orb orb-cyan" style="top: 25%; right: -50px;"></div>
+  <div class="glow-orb orb-mint" style="top: 75%; left: -50px;"></div>
+
+  <div id="site-header"></div>
+
+  <!-- Solutions Hero -->
+  <section class="solutions-hero">
+    <div class="container" data-reveal>
+      <span class="badge">Proprietary Tech</span>
+      <h1 class="section-title" style="font-size: 3rem; margin-bottom: 20px;">Specialized Intelligence Solutions</h1>
+      <p style="max-width: 700px; margin: 0 auto; color: var(--text-secondary); font-size: 1.1rem;">
+        Deploying robust, battle-tested ML systems and threat intelligence engines that integrate directly with enterprise architectures.
+      </p>
+    </div>
+  </section>
+
+  <!-- Solution Detail: ThirdEye -->
+  <section class="sol-detail-section" id="thirdeye">
+    <div class="container sol-detail-grid">
+      <div class="sol-text-block" data-reveal>
+        <span class="badge">Computer Vision</span>
+        <h2 style="font-size: 2.2rem; margin-bottom: 20px;">ThirdEye: Intelligent Automated Inspection</h2>
+        <p style="color: var(--text-secondary); margin-bottom: 20px;">
+          ThirdEye is Kpro's proprietary AI-driven observation and computer vision platform. Built to automate complex visual verification, ThirdEye interfaces directly with high-definition digital cameras and thermal feeds on factory floors, secure warehouses, and infrastructure sites.
+        </p>
+        <p style="color: var(--text-secondary); margin-bottom: 24px;">
+          The platform operates on advanced deep learning convolution layers that categorize anomalies, identify manufacturing defects, track hazard compliance, and alert technicians in milliseconds.
+        </p>
+        <div class="tech-pill-container">
+          <span class="tech-pill">PyTorch</span>
+          <span class="tech-pill">TensorRT Acceleration</span>
+          <span class="tech-pill">OpenCV Engine</span>
+          <span class="tech-pill">RTSP Streaming</span>
+          <span class="tech-pill">MQTT Alert Brokers</span>
+        </div>
+      </div>
+      <div class="sol-img-placeholder" data-reveal>
+        <svg width="200" height="200" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="50" cy="50" r="30" stroke="var(--accent-cyan)" stroke-width="2" stroke-dasharray="5 5" />
+          <circle cx="50" cy="50" r="15" fill="var(--accent-cyan-glow)" />
+          <path d="M50 20 V80 M20 50 H80" stroke="var(--accent-cyan)" stroke-width="1" opacity="0.3" />
+          <path d="M40 50 L47 57 L60 44" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- Solution Detail: Supply Chain -->
+  <section class="sol-detail-section" id="supply-chain">
+    <div class="container sol-detail-grid reverse">
+      <div class="sol-text-block" data-reveal>
+        <span class="badge">Predictive Logistics</span>
+        <h2 style="font-size: 2.2rem; margin-bottom: 20px;">SupplyChainAnalytics Platform</h2>
+        <p style="color: var(--text-secondary); margin-bottom: 20px;">
+          Anticipate supply chain disruptions before they halt delivery channels. Kpro's SupplyChainAnalytics aggregates telemetry across warehouses, suppliers, transit schedules, and client demands to build a holistic forecasting model.
+        </p>
+        <p style="color: var(--text-secondary); margin-bottom: 24px;">
+          Our forecasting engines allow procurement teams to optimize multi-echelon stock levels, avoid stockout fees, reduce storage holding expenses, and dynamically route logistics to alternative hubs when disruptions trigger.
+        </p>
+        <div class="tech-pill-container">
+          <span class="tech-pill">Apache Spark ML</span>
+          <span class="tech-pill">Time-Series Forecasts</span>
+          <span class="tech-pill">Mathematical Solvers</span>
+          <span class="tech-pill">Data Lake Integration</span>
+        </div>
+      </div>
+      <div class="sol-img-placeholder" data-reveal>
+        <svg width="200" height="200" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <!-- Supply chain nodes visual -->
+          <circle cx="20" cy="30" r="6" fill="var(--accent-mint)" />
+          <circle cx="50" cy="50" r="8" fill="var(--accent-cyan)" />
+          <circle cx="80" cy="30" r="6" fill="var(--accent-mint)" />
+          <circle cx="80" cy="70" r="6" fill="var(--accent-mint)" />
+          <line x1="20" y1="30" x2="50" y2="50" stroke="var(--accent-mint)" stroke-width="2" />
+          <line x1="50" y1="50" x2="80" y2="30" stroke="var(--accent-cyan)" stroke-width="2" />
+          <line x1="50" y1="50" x2="80" y2="70" stroke="var(--accent-cyan)" stroke-width="2" />
+          <path d="M20 30 Q 50 20 80 30" stroke="var(--accent-cyan)" stroke-width="1" stroke-dasharray="3 3" fill="none" />
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- Solution Detail: Threat Analytics -->
+  <section class="sol-detail-section" id="threat-analytics">
+    <div class="container sol-detail-grid">
+      <div class="sol-text-block" data-reveal>
+        <span class="badge">Behavioral Security</span>
+        <h2 style="font-size: 2.2rem; margin-bottom: 20px;">Internal Security Threat Analytics</h2>
+        <p style="color: var(--text-secondary); margin-bottom: 20px;">
+          The biggest vulnerabilities often hide within trusted networks. Kpro's Security Threat Intelligence Platform leverages machine learning to perform User and Entity Behavior Analytics (UEBA).
+        </p>
+        <p style="color: var(--text-secondary); margin-bottom: 24px;">
+          By mapping active audit trails, network telemetry, database access timings, and file exfiltration signals, Kpro builds unique behavioral profiles. If credentials leak or unusual exfiltration begins, anomalous alerts trigger a locked status instantly.
+        </p>
+        <div class="tech-pill-container">
+          <span class="tech-pill">Elasticsearch / ELK</span>
+          <span class="tech-pill">Isolation Forest Models</span>
+          <span class="tech-pill">Syslog Ingestion</span>
+          <span class="tech-pill">Zero-Day Anomaly Detection</span>
+        </div>
+      </div>
+      <div class="sol-img-placeholder" data-reveal>
+        <svg width="200" height="200" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="25" y="30" width="50" height="40" rx="4" stroke="var(--accent-cyan)" stroke-width="3" />
+          <path d="M40 30 V20 Q 50 12 60 20 V30" stroke="var(--accent-mint)" stroke-width="3" fill="none" />
+          <circle cx="50" cy="50" r="5" fill="var(--accent-mint)" />
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Solutions Simulator -->
+  <section class="section" style="padding-top: 40px;">
+    <div class="container">
+      <div class="section-title-wrap" data-reveal>
+        <span class="section-subtitle">Live Mock Environment</span>
+        <h2 class="section-title">Interactive Solutions Dashboard</h2>
+      </div>
+
+      <div class="dashboard-container" data-reveal>
+        <div class="dashboard-header">
+          <div class="dashboard-tabs">
+            <button class="dash-tab-btn active" onclick="switchSim('thirdeye-sim')"><i class="fa fa-eye"></i> ThirdEye Vision</button>
+            <button class="dash-tab-btn" onclick="switchSim('supply-sim')"><i class="fa fa-truck-ramp-box"></i> SupplyChain ML</button>
+            <button class="dash-tab-btn" onclick="switchSim('security-sim')"><i class="fa fa-user-shield"></i> Security Threat UEBA</button>
+          </div>
+          <div>
+            <span id="simulator-status" class="status-indicator status-ok"><i class="fa fa-circle-check"></i> System Operational</span>
+          </div>
+        </div>
+
+        <div class="dashboard-body">
+          <!-- View 1: ThirdEye Simulator -->
+          <div id="thirdeye-sim" class="dash-view active">
+            <div class="sim-grid">
+              <div class="thirdeye-viewscreen">
+                <div class="scan-line"></div>
+                <!-- Mock camera feed elements -->
+                <div style="color: #00ff66; position: absolute; top: 15px; left: 15px; font-family: monospace; font-size: 0.8rem;">
+                  <i class="fa fa-video"></i> CAM_LINE_04 // RESOLUTION: 1080P // INFERENCE: 18ms
+                </div>
+                
+                <div id="sim-bounding-box" class="sim-box" style="top: 40%; left: 35%; width: 120px; height: 80px;">
+                  DEFECT_SEAL: 98%
+                </div>
+              </div>
+              <div class="sim-panel">
+                <h4 style="margin-bottom: 15px;">ThirdEye Parameters</h4>
+                <div class="sim-controls">
+                  <div class="slider-group">
+                    <label style="font-size: 0.85rem;" for="defect-threshold">Anomaly Sensitivity Target: <span id="defect-label">85%</span></label>
+                    <input type="range" id="defect-threshold" class="sim-slider" min="50" max="99" value="85" oninput="updateDefect(this.value)">
+                  </div>
+                  <div class="slider-group">
+                    <label style="font-size: 0.85rem;" for="cam-fps">Camera Video Frame Rate: <span id="fps-label">30 FPS</span></label>
+                    <input type="range" id="cam-fps" class="sim-slider" min="10" max="60" value="30" oninput="updateFPS(this.value)">
+                  </div>
+                  <button class="btn btn-outline" style="padding: 10px; font-size: 0.85rem;" onclick="triggerDefectSim()">Simulate Defect Event</button>
+                </div>
+              </div>
+            </div>
+            <div style="margin-top: 20px;">
+              <h4 style="margin-bottom: 10px; font-size: 0.9rem;">Real-time Vision Analytics Feed</h4>
+              <div id="thirdeye-log" class="sim-log-screen"></div>
+            </div>
+          </div>
+
+          <!-- View 2: Supply Chain Simulator -->
+          <div id="supply-sim" class="dash-view">
+            <div class="sim-grid">
+              <div class="sim-panel" style="display: flex; flex-direction: column; justify-content: center; gap: 20px; min-height: 250px;">
+                <h4 style="text-align: center;">Inventory Levels Optimizer</h4>
+                <div style="display: flex; justify-content: space-around; align-items: flex-end; height: 150px; padding: 20px; background: rgba(0,0,0,0.2); border-radius: 4px;">
+                  <div style="display: flex; flex-direction: column; align-items: center; width: 60px;">
+                    <div id="bar-demand" style="width: 25px; height: 120px; background: var(--accent-cyan); border-radius: 4px 4px 0 0; transition: height 0.3s;"></div>
+                    <span style="font-size: 0.75rem; margin-top: 8px;">Demand</span>
+                  </div>
+                  <div style="display: flex; flex-direction: column; align-items: center; width: 60px;">
+                    <div id="bar-stock" style="width: 25px; height: 80px; background: var(--accent-mint); border-radius: 4px 4px 0 0; transition: height 0.3s;"></div>
+                    <span style="font-size: 0.75rem; margin-top: 8px;">Stock Level</span>
+                  </div>
+                  <div style="display: flex; flex-direction: column; align-items: center; width: 60px;">
+                    <div id="bar-transit" style="width: 25px; height: 50px; background: #94a3b8; border-radius: 4px 4px 0 0; transition: height 0.3s;"></div>
+                    <span style="font-size: 0.75rem; margin-top: 8px;">In-Transit</span>
+                  </div>
+                </div>
+              </div>
+              <div class="sim-panel">
+                <h4 style="margin-bottom: 15px;">Logistics Controls</h4>
+                <div class="sim-controls">
+                  <div class="slider-group">
+                    <label style="font-size: 0.85rem;" for="demand-rate">Simulated Demand Velocity: <span id="demand-label">70%</span></label>
+                    <input type="range" id="demand-rate" class="sim-slider" min="10" max="100" value="70" oninput="updateDemand(this.value)">
+                  </div>
+                  <div class="slider-group">
+                    <label style="font-size: 0.85rem;" for="safety-stock">Safety Buffer Threshold: <span id="safety-label">30%</span></label>
+                    <input type="range" id="safety-stock" class="sim-slider" min="10" max="60" value="30" oninput="updateSafety(this.value)">
+                  </div>
+                  <button class="btn btn-outline" style="padding: 10px; font-size: 0.85rem;" onclick="rebalanceSupply()">Run Rebalancing Model</button>
+                </div>
+              </div>
+            </div>
+            <div style="margin-top: 20px;">
+              <h4 style="margin-bottom: 10px; font-size: 0.9rem;">Predictive Rebalancing Console</h4>
+              <div id="supply-log" class="sim-log-screen" style="color: #38bdf8; border-color: rgba(56, 189, 248, 0.15)"></div>
+            </div>
+          </div>
+
+          <!-- View 3: Security Simulator -->
+          <div id="security-sim" class="dash-view">
+            <div class="sim-grid">
+              <div class="sim-panel" style="display: flex; flex-direction: column; justify-content: center; align-items: center; min-height: 250px; gap: 20px;">
+                <div id="security-shield" style="width: 100px; height: 100px; border-radius: 50%; border: 3px solid #00ff66; display: flex; align-items: center; justify-content: center; font-size: 3rem; color: #00ff66; text-shadow: 0 0 10px rgba(0, 255, 102, 0.3); transition: all 0.3s;">
+                  <i class="fa fa-shield"></i>
+                </div>
+                <h4 id="security-status-text" style="color: #00ff66;">Perimeter Clean: Active profiles match historical baselines</h4>
+              </div>
+              <div class="sim-panel">
+                <h4 style="margin-bottom: 15px;">UEBA Behavioral Audits</h4>
+                <div class="sim-controls">
+                  <div class="slider-group">
+                    <label style="font-size: 0.85rem;" for="user-variance">Permitted Baseline Variance: <span id="variance-label">15%</span></label>
+                    <input type="range" id="user-variance" class="sim-slider" min="5" max="50" value="15" oninput="updateVariance(this.value)">
+                  </div>
+                  <button class="btn btn-outline" style="padding: 10px; font-size: 0.85rem; border-color: #ff3333; color: #ff3333;" onclick="triggerThreatSim()">Simulate Exfiltration Attempt</button>
+                  <button class="btn btn-secondary" style="padding: 10px; font-size: 0.85rem;" onclick="resetSecurity()">Reset System Perimeter</button>
+                </div>
+              </div>
+            </div>
+            <div style="margin-top: 20px;">
+              <h4 style="margin-bottom: 10px; font-size: 0.9rem;">Internal Audit Logs & Alerts (Live stream)</h4>
+              <div id="security-log" class="sim-log-screen" style="color: #a78bfa; border-color: rgba(167, 139, 250, 0.15)"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="section" style="background-color: var(--bg-dark); text-align: center; overflow: hidden; border-top: 1px solid var(--glass-border);">
+    <div class="container" data-reveal>
+      <h2 style="font-size: 2.3rem; margin-bottom: 20px;">Interested in custom ML platforms?</h2>
+      <p style="max-width: 600px; margin: 0 auto 40px auto; color: var(--text-secondary);">
+        Our architects work under an agile outcomes model. We can deploy tailored versions of these tools in your local, private clouds or edge infrastructure.
+      </p>
+      <a href="contact.html" class="btn btn-primary">Schedule Technical Briefing <i class="fa fa-network-wired"></i></a>
+    </div>
+  </section>
+
+  <div id="site-footer"></div>
+
+  <script type="module" src="js/main.js"></script>
+  <script>
+    // Simulator Logic
+    const thirdeyeLog = document.getElementById('thirdeye-log');
+    const supplyLog = document.getElementById('supply-log');
+    const securityLog = document.getElementById('security-log');
+
+    // Init log screens with startup text
+    const initLogs = () => {
+      thirdeyeLog.innerHTML = `[${new Date().toLocaleTimeString()}] THIRDEYE: Initializing camera ingestion components...\\n` +
+        `[${new Date().toLocaleTimeString()}] THIRDEYE: RTSP stream verified. Connection state: OK.\\n` +
+        `[${new Date().toLocaleTimeString()}] THIRDEYE: Inference loop active at 18ms. Listening for defects...`;
+      
+      supplyLog.innerHTML = `[${new Date().toLocaleTimeString()}] SUPPLY_CHAIN: Optimizing distribution nodes...\\n` +
+        `[${new Date().toLocaleTimeString()}] SUPPLY_CHAIN: Input streams (Supply, Transits, Supplier ETAs) loaded.\\n` +
+        `[${new Date().toLocaleTimeString()}] SUPPLY_CHAIN: Running ARIMA & LSTM time-series forecast models...`;
+
+      securityLog.innerHTML = `[${new Date().toLocaleTimeString()}] SEC_UEBA: Security stream daemon active.\\n` +
+        `[${new Date().toLocaleTimeString()}] SEC_UEBA: Loading profile vectors from local cluster logs.\\n` +
+        `[${new Date().toLocaleTimeString()}] SEC_UEBA: Monitoring active console processes (auditd stream).`;
+    };
+    initLogs();
+
+    // Tab Switching
+    function switchSim(simId) {
+      document.querySelectorAll('.dash-view').forEach(view => {
+        view.classList.remove('active');
+      });
+      document.getElementById(simId).classList.add('active');
+
+      document.querySelectorAll('.dash-tab-btn').forEach(btn => {
+        btn.classList.remove('active');
+      });
+      // Active the clicked tab button
+      const targetBtn = Array.from(document.querySelectorAll('.dash-tab-btn')).find(b => {
+        return b.onclick.toString().includes(simId);
+      });
+      if (targetBtn) targetBtn.classList.add('active');
+    }
+
+    // Slider controls feedback
+    function updateDefect(val) {
+      document.getElementById('defect-label').innerText = val + '%';
+      logSimMessage('thirdeye', `SYSTEM: Defect detection sensitivity adjusted to ${val}% confidence threshold.`);
+    }
+
+    function updateFPS(val) {
+      document.getElementById('fps-label').innerText = val + ' FPS';
+      logSimMessage('thirdeye', `SYSTEM: RTSP ingestion updated. Video thread sampling rate set to ${val} frames per second.`);
+    }
+
+    function updateDemand(val) {
+      document.getElementById('demand-label').innerText = val + '%';
+      document.getElementById('bar-demand').style.height = `${val * 1.3}px`;
+      logSimMessage('supply', `SYSTEM: Adjusted customer demand forecast velocity to ${val} units/hr.`);
+      checkSupplyStatus();
+    }
+
+    function updateSafety(val) {
+      document.getElementById('safety-label').innerText = val + '%';
+      logSimMessage('supply', `SYSTEM: Minimum safety buffer threshold updated to ${val}%.`);
+      checkSupplyStatus();
+    }
+
+    function updateVariance(val) {
+      document.getElementById('variance-label').innerText = val + '%';
+      logSimMessage('security', `SYSTEM: UEBA profiling model adjusted to allow up to ${val}% variance from standard behavior.`);
+    }
+
+    // Helper logs
+    function logSimMessage(simType, text) {
+      const logBox = document.getElementById(`${simType}-log`);
+      const stamp = new Date().toLocaleTimeString();
+      logBox.innerHTML += `\\n[${stamp}] ${text}`;
+      logBox.scrollTop = logBox.scrollHeight;
+    }
+
+    // Simulate interactions
+    function triggerDefectSim() {
+      logSimMessage('thirdeye', `CRITICAL: DEFECT DETECTED at Line 4 - Seal integrity under threshold.`);
+      const box = document.getElementById('sim-bounding-box');
+      box.style.border = '2px solid #ff3333';
+      box.style.color = '#ff3333';
+      box.style.background = 'rgba(255, 51, 51, 0.15)';
+      box.innerHTML = 'DEFECT_SEAL: 42%<br>ERR_ANOMALY';
+      
+      const mainIndicator = document.getElementById('simulator-status');
+      mainIndicator.className = 'status-indicator status-warning';
+      mainIndicator.innerHTML = '<i class="fa fa-triangle-exclamation"></i> Defect Triggered';
+
+      setTimeout(() => {
+        box.style.border = '2px solid #00ff66';
+        box.style.color = '#00ff66';
+        box.style.background = 'rgba(0, 255, 102, 0.1)';
+        box.innerHTML = 'DEFECT_SEAL: 98%<br>OK';
+        mainIndicator.className = 'status-indicator status-ok';
+        mainIndicator.innerHTML = '<i class="fa fa-circle-check"></i> System Operational';
+        logSimMessage('thirdeye', `SYSTEM: Auto-alert dispatched. Defect item rejected at diverter valve 2.`);
+      }, 5000);
+    }
+
+    function checkSupplyStatus() {
+      const demandVal = parseInt(document.getElementById('demand-rate').value);
+      const safetyVal = parseInt(document.getElementById('safety-stock').value);
+      const stockBar = document.getElementById('bar-stock');
+      
+      // Stock level goes down as demand increases
+      let stockHeight = 150 - (demandVal * 0.9);
+      if (stockHeight < 15) stockHeight = 15;
+      stockBar.style.height = `${stockHeight}px`;
+
+      const mainIndicator = document.getElementById('simulator-status');
+      
+      if (stockHeight < (safetyVal * 2)) {
+        stockBar.style.background = '#ff3333';
+        mainIndicator.className = 'status-indicator status-warning';
+        mainIndicator.innerHTML = '<i class="fa fa-circle-exclamation"></i> Supply Alert';
+        logSimMessage('supply', `WARNING: Current stock level drops below safety buffer threshold. Risk of inventory depletion!`);
+      } else {
+        stockBar.style.background = 'var(--accent-mint)';
+        mainIndicator.className = 'status-indicator status-ok';
+        mainIndicator.innerHTML = '<i class="fa fa-circle-check"></i> System Operational';
+      }
+    }
+
+    function rebalanceSupply() {
+      logSimMessage('supply', `RUNNING: Optimization solver calculating optimal replenishment parameters...`);
+      setTimeout(() => {
+        document.getElementById('bar-stock').style.height = '120px';
+        document.getElementById('bar-stock').style.background = 'var(--accent-mint)';
+        document.getElementById('bar-transit').style.height = '90px';
+        const mainIndicator = document.getElementById('simulator-status');
+        mainIndicator.className = 'status-indicator status-ok';
+        mainIndicator.innerHTML = '<i class="fa fa-circle-check"></i> System Operational';
+        logSimMessage('supply', `SUCCESS: Optimization completed. Auto-procured 500 units from Supplier Node B. Logistics updated.`);
+      }, 1500);
+    }
+
+    function triggerThreatSim() {
+      logSimMessage('security', `SECURITY ALERT: Host user 'developer-08' initialized download of 'customer_vault.db' (980MB).`);
+      logSimMessage('security', `WARNING: Behavioral Variance calculated at 84%. User historically never downloads databases.`);
+      
+      const shield = document.getElementById('security-shield');
+      const statusText = document.getElementById('security-status-text');
+      const mainIndicator = document.getElementById('simulator-status');
+      
+      shield.style.borderColor = '#ff3333';
+      shield.style.color = '#ff3333';
+      shield.style.textShadow = '0 0 15px rgba(255, 51, 51, 0.5)';
+      statusText.innerHTML = `PERIMETER LOCKED: Exfiltration threat detected. Account access revoked.`;
+      statusText.style.color = '#ff3333';
+      mainIndicator.className = 'status-indicator status-warning';
+      mainIndicator.innerHTML = '<i class="fa fa-lock"></i> Threat Lockout';
+    }
+
+    function resetSecurity() {
+      logSimMessage('security', `SYSTEM: Administrator override triggered. Validating secure certificates...`);
+      setTimeout(() => {
+        const shield = document.getElementById('security-shield');
+        const statusText = document.getElementById('security-status-text');
+        const mainIndicator = document.getElementById('simulator-status');
+        
+        shield.style.borderColor = '#00ff66';
+        shield.style.color = '#00ff66';
+        shield.style.textShadow = '0 0 10px rgba(0, 255, 102, 0.3)';
+        statusText.innerHTML = `Perimeter Clean: Active profiles match historical baselines`;
+        statusText.style.color = '#00ff66';
+        mainIndicator.className = 'status-indicator status-ok';
+        mainIndicator.innerHTML = '<i class="fa fa-circle-check"></i> System Operational';
+        logSimMessage('security', `SYSTEM: Security perimeter reset. User tokens re-authorized.`);
+      }, 1000);
+    }
+  </script>
+</body>
+</html>

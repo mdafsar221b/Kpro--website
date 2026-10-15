@@ -1,0 +1,934 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="img/logo.svg" type="image/svg+xml">
+  <!-- Open Graph / Social Media -->
+  <meta property="og:title" content="Capabilities | Kpro Solutions Pvt. Ltd.">
+  <meta property="og:description" content="Explore Kpro's technical capabilities in GenAI Solutions, Cloud & DevOps, Analytics & Big Data, Block Chain, and IoT Engineering.">
+  <meta property="og:url" content="https://www.kpro.co.in/capabilities.html">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://www.kpro.co.in/img/logo.svg">
+  <meta property="og:site_name" content="Kpro Solutions">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Capabilities | Kpro Solutions Pvt. Ltd.">
+  <meta name="twitter:description" content="Explore Kpro's technical capabilities in GenAI Solutions, Cloud & DevOps, Analytics & Big Data, Block Chain, and IoT Engineering.">
+  <link rel="canonical" href="https://www.kpro.co.in/capabilities.html">
+  <meta name="description" content="Explore Kpro's technical capabilities in GenAI Solutions, Cloud & DevOps, Analytics & Big Data, Block Chain, and IoT Engineering.">
+  <title>Capabilities | Kpro Solutions Pvt. Ltd.</title>
+  
+  <!-- Structured Data (JSON-LD) for Search & LLM Engines -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebPage",
+        "@id": "https://www.kpro.co.in/capabilities.html#webpage",
+        "url": "https://www.kpro.co.in/capabilities.html",
+        "name": "Capabilities | Kpro Solutions Pvt. Ltd.",
+        "description": "Explore Kpro's technical capabilities in GenAI Solutions, Cloud & DevOps, Analytics & Big Data, Block Chain, and IoT Engineering.",
+        "breadcrumb": {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://www.kpro.co.in"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Capabilities",
+              "item": "https://www.kpro.co.in/capabilities.html"
+            }
+          ]
+        }
+      },
+      {
+        "@type": "Service",
+        "name": "Generative AI Systems Integration",
+        "provider": {
+          "@type": "Organization",
+          "name": "Kpro Solutions Pvt. Ltd.",
+          "url": "https://www.kpro.co.in"
+        },
+        "description": "Custom LLM integrations, retrieval-augmented generation pipelines, cognitive agency networks, and model training services."
+      },
+      {
+        "@type": "Service",
+        "name": "Cloud & DevOps Engineering",
+        "provider": {
+          "@type": "Organization",
+          "name": "Kpro Solutions Pvt. Ltd.",
+          "url": "https://www.kpro.co.in"
+        },
+        "description": "Cloud architecture design, multi-cloud setups, secure infrastructure-as-code deployment, and automated CI/CD pipelines."
+      },
+      {
+        "@type": "Service",
+        "name": "Analytics & IoT Engineering",
+        "provider": {
+          "@type": "Organization",
+          "name": "Kpro Solutions Pvt. Ltd.",
+          "url": "https://www.kpro.co.in"
+        },
+        "description": "High-concurrency sensory networks, real-time edge metric ingestion, and advanced machine learning predictive pipelines."
+      }
+    ]
+  }
+  </script>
+
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Performance: early connection hints -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <style>
+    .capabilities-hero {
+      padding-top: 160px;
+      padding-bottom: 80px;
+      background: linear-gradient(180deg, var(--bg-dark) 0%, var(--bg-darker) 100%);
+      text-align: center;
+    }
+    
+    /* Interactive Tabs Grid */
+    .caps-tab-section {
+      padding: 60px 0;
+    }
+    
+    .caps-layout-grid {
+      display: grid;
+      grid-template-columns: 0.8fr 1.2fr;
+      gap: 50px;
+      align-items: start;
+    }
+    
+    .caps-menu {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+    
+    .cap-menu-item {
+      padding: 24px;
+      background: var(--bg-card);
+      border: 1px solid var(--glass-border);
+      border-radius: var(--border-radius-md);
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      transition: var(--transition-normal);
+      text-align: left;
+    }
+    
+    .cap-menu-item.active {
+      border-color: var(--accent-cyan);
+      background: var(--accent-cyan-glow);
+      box-shadow: var(--shadow-neon-cyan);
+    }
+    
+    .cap-menu-item i {
+      font-size: 1.8rem;
+      color: var(--text-muted);
+      transition: var(--transition-fast);
+    }
+    
+    .cap-menu-item.active i {
+      color: var(--accent-cyan);
+      filter: drop-shadow(0 0 8px var(--accent-cyan-glow));
+    }
+    
+    .cap-menu-title {
+      font-size: 1.2rem;
+      font-weight: 700;
+      margin-bottom: 4px;
+      color: var(--text-primary);
+    }
+    
+    .cap-menu-subtitle {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+    }
+    
+    /* Content display card */
+    .cap-content-display {
+      padding: 45px;
+      min-height: 480px;
+    }
+    
+    .cap-panel-view {
+      display: none;
+      animation: fadeInUp 0.5s ease-out forwards;
+    }
+    .cap-panel-view.active {
+      display: block;
+    }
+    
+    .panel-header {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      margin-bottom: 30px;
+      border-bottom: 1px solid var(--glass-border);
+      padding-bottom: 20px;
+    }
+    
+    .panel-header i {
+      font-size: 2.5rem;
+      color: var(--accent-cyan);
+    }
+    
+    .panel-title {
+      font-size: 2rem;
+    }
+    
+    .panel-body p {
+      color: var(--text-secondary);
+      margin-bottom: 24px;
+      font-size: 1.05rem;
+      line-height: 1.7;
+    }
+    
+    .panel-sub-section {
+      margin-bottom: 30px;
+    }
+    
+    .panel-sub-title {
+      font-size: 1.2rem;
+      margin-bottom: 15px;
+      color: var(--text-primary);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .panel-sub-title i {
+      color: var(--accent-mint);
+      font-size: 1rem;
+    }
+    
+    /* Tool Stack List */
+    .tool-list {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+    }
+    
+    .tool-card {
+      padding: 16px;
+      background: rgba(255, 255, 255, 0.02);
+      border: 1px solid var(--glass-border);
+      border-radius: var(--border-radius-sm);
+      text-align: center;
+      font-size: 0.9rem;
+      font-weight: 500;
+      color: var(--text-primary);
+    }
+    
+    .milestone-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 24px;
+    }
+    
+    @media (max-width: 992px) {
+      .caps-layout-grid {
+        grid-template-columns: 1fr;
+      }
+      .cap-content-display {
+        padding: 30px;
+      }
+      .milestone-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+    
+    @media (max-width: 768px) {
+      .milestone-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+    
+    @media (max-width: 576px) {
+      .tool-list {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (min-width: 993px) {
+      .caps-menu {
+        position: sticky;
+        top: 120px;
+        max-height: calc(100vh - 180px);
+        overflow-y: auto;
+        padding-right: 8px;
+      }
+      
+      .cap-content-display {
+        position: sticky;
+        top: 120px;
+        max-height: calc(100vh - 180px);
+        overflow-y: auto;
+      }
+      
+      /* Clean, premium custom scrollbar for left/right panels */
+      .caps-menu::-webkit-scrollbar,
+      .cap-content-display::-webkit-scrollbar {
+        width: 6px;
+      }
+      
+      .caps-menu::-webkit-scrollbar-track,
+      .cap-content-display::-webkit-scrollbar-track {
+        background: transparent;
+      }
+      
+      .caps-menu::-webkit-scrollbar-thumb,
+      .cap-content-display::-webkit-scrollbar-thumb {
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 4px;
+      }
+      
+      .caps-menu::-webkit-scrollbar-thumb:hover,
+      .cap-content-display::-webkit-scrollbar-thumb:hover {
+        background: var(--accent-cyan);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Background Orbs -->
+  <div class="glow-orb orb-cyan" style="top: 15%; left: -80px;"></div>
+  <div class="glow-orb orb-mint" style="top: 65%; right: -80px;"></div>
+
+  <div id="site-header"></div>
+
+  <!-- Capabilities Hero -->
+  <section class="capabilities-hero">
+    <div class="container" data-reveal>
+      <span class="badge">Tech Expertise</span>
+      <h1 class="section-title" style="font-size: 3rem; margin-bottom: 20px;">Engineering & Capabilities</h1>
+      <p style="max-width: 700px; margin: 0 auto; color: var(--text-secondary); font-size: 1.1rem;">
+        Discover Kpro's technical capabilities. We design systems that handle massive concurrency, guarantee high availability, and deliver real data insights.
+      </p>
+    </div>
+  </section>
+
+  <!-- Interactive Tabs Section -->
+  <section class="caps-tab-section">
+    <div class="container caps-layout-grid">
+      <!-- Left: Menu selections -->
+      <div class="caps-menu" data-reveal>
+        
+        <div class="cap-menu-item active" onclick="switchCapTab('genai-panel')">
+          <i class="fa-solid fa-brain"></i>
+          <div>
+            <h3 class="cap-menu-title">GenAI Solutions</h3>
+            <span class="cap-menu-subtitle">LLMs, RAG, &amp; AI agents</span>
+          </div>
+        </div>
+        
+        <div class="cap-menu-item" onclick="switchCapTab('cloud-panel')">
+          <i class="fa-solid fa-cloud-arrow-up"></i>
+          <div>
+            <h3 class="cap-menu-title">Cloud &amp; DevOps</h3>
+            <span class="cap-menu-subtitle">AWS/Azure/GCP scaling &amp; IaC</span>
+          </div>
+        </div>
+
+        <div class="cap-menu-item" onclick="switchCapTab('analytics-panel')">
+          <i class="fa-solid fa-database"></i>
+          <div>
+            <h3 class="cap-menu-title">Analytics &amp; Big Data</h3>
+            <span class="cap-menu-subtitle">Lakehouses, streams, &amp; ETL</span>
+          </div>
+        </div>
+
+        <div class="cap-menu-item" onclick="switchCapTab('blockchain-panel')">
+          <i class="fa-solid fa-link-slash"></i>
+          <div>
+            <h3 class="cap-menu-title">Block Chain</h3>
+            <span class="cap-menu-subtitle">Smart contracts &amp; private ledgers</span>
+          </div>
+        </div>
+
+        <div class="cap-menu-item" onclick="switchCapTab('iot-panel')">
+          <i class="fa-solid fa-microchip"></i>
+          <div>
+            <h3 class="cap-menu-title">IoT Engineering</h3>
+            <span class="cap-menu-subtitle">Telemetry, IIoT, &amp; Edge AI</span>
+          </div>
+        </div>
+
+        <div class="cap-menu-item" onclick="switchCapTab('product-panel')">
+          <i class="fa-solid fa-laptop-code"></i>
+          <div>
+            <h3 class="cap-menu-title">Product Development</h3>
+            <span class="cap-menu-subtitle">Custom software &amp; MVP engineering</span>
+          </div>
+        </div>
+
+        <div class="cap-menu-item" onclick="switchCapTab('mobile-panel')">
+          <i class="fa-solid fa-mobile-screen-button"></i>
+          <div>
+            <h3 class="cap-menu-title">Mobile App Dev</h3>
+            <span class="cap-menu-subtitle">iOS, Android, &amp; hybrid apps</span>
+          </div>
+        </div>
+
+        <div class="cap-menu-item" onclick="switchCapTab('staff-panel')">
+          <i class="fa-solid fa-people-group"></i>
+          <div>
+            <h3 class="cap-menu-title">Staff Augmentation</h3>
+            <span class="cap-menu-subtitle">Dedicated engineering squads</span>
+          </div>
+        </div>
+
+        <div class="cap-menu-item" onclick="switchCapTab('training-panel')">
+          <i class="fa-solid fa-graduation-cap"></i>
+          <div>
+            <h3 class="cap-menu-title">Technical Training</h3>
+            <span class="cap-menu-subtitle">Corporate &amp; campus upskilling</span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Right: Content Display glass card -->
+      <div class="glass-card cap-content-display" data-reveal>
+        
+        <!-- Panel 1: GenAI Solutions -->
+        <div id="genai-panel" class="cap-panel-view active">
+          <div class="panel-header">
+            <i class="fa-solid fa-brain"></i>
+            <h2 class="panel-title">GenAI Solutions</h2>
+          </div>
+          <div class="panel-body">
+            <p>
+              Architect secure, production-grade Generative AI systems that integrate foundational models with enterprise data repositories. We build production-ready systems utilizing advanced Retrieval-Augmented Generation (RAG), autonomous multi-agent frameworks, and custom model fine-tuning to deliver measurable business intelligence and process automation.
+            </p>
+            <div class="panel-sub-section">
+              <h4 class="panel-sub-title"><i class="fa fa-circle-check"></i> Key Capabilities</h4>
+              <p style="font-size: 0.95rem; margin-bottom: 12px;">
+                - <strong>Fine-Tuning & Model Alignment:</strong> Adapting open-source and proprietary models (LLMs/LMMs) for specialized industries and proprietary domain terminology.<br>
+                - <strong>Enterprise RAG Architectures:</strong> Designing robust semantic search engines and knowledge retrieval systems with hybrid search, metadata pre-filtering, and advanced reranking.<br>
+                - <strong>Multi-Agent Workflows:</strong> Deploying autonomous cooperative agents with stateful memory and tool-calling capabilities to handle complex reasoning tasks.<br>
+                - <strong>AI Safety & Guardrails:</strong> Implementing prompt injection prevention, bias reduction, content filtering, and robust PII redaction wrappers.
+              </p>
+            </div>
+            <div class="panel-sub-section">
+              <h4 class="panel-sub-title"><i class="fa-solid fa-sitemap"></i> Architecture &amp; Patterns</h4>
+              <p style="font-size: 0.95rem; margin-bottom: 12px;">
+                We deploy graph-based state machines (LangGraph) for multi-agent coordination, backed by semantic caches (Redis) to minimize inference latency and vector indexes with recursive text splitting for highly accurate source context mapping.
+              </p>
+            </div>
+            <div class="panel-sub-section">
+              <h4 class="panel-sub-title"><i class="fa-solid fa-lightbulb"></i> Case Study: Customer Operations Copilot</h4>
+              <p style="font-size: 0.95rem; margin-bottom: 12px;">
+                Implemented an autonomous support agent for a fintech company that resolved 68% of incoming L1 support tickets by executing secure ledger tool-calling, querying product vector stores, and routing complex inquiries to live human channels.
+              </p>
+            </div>
+            <div class="panel-sub-section">
+              <h4 class="panel-sub-title"><i class="fa fa-cubes"></i> AI &amp; ML Tool Stack</h4>
+              <div class="tool-list">
+                <div class="tool-card">OpenAI / Anthropic / Gemini</div>
+                <div class="tool-card">LlamaIndex / LangChain / LangGraph</div>
+                <div class="tool-card">Milvus / Qdrant / Pinecone / pgvector</div>
+                <div class="tool-card">PyTorch / Hugging Face</div>
+                <div class="tool-card">vLLM / TensorRT-LLM (Inference)</div>
+                <div class="tool-card">LangSmith / Arize Phoenix</div>
+              </div>
+            </div>
+            <div style="margin-top: 30px; display: flex; gap: 15px; flex-wrap: wrap;">
+              <a href="contact.html?subject=genai" class="btn btn-primary">Consult Our GenAI Experts <i class="fa fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Panel 2: Cloud & DevOps -->
+        <div id="cloud-panel" class="cap-panel-view">
+          <div class="panel-header">
+            <i class="fa-solid fa-cloud-arrow-up"></i>
+            <h2 class="panel-title">Cloud &amp; DevOps</h2>
+          </div>
+          <div class="panel-body">
+            <p>
+              Structure highly resilient, auto-scaling, and secure cloud environments designed for massive concurrency. By employing declarative Infrastructure as Code (IaC) and git-driven deployment workflows (GitOps), we guarantee high-availability service delivery, zero-downtime deployments, and audited compliance standards across major cloud ecosystems.
+            </p>
+            <div class="panel-sub-section">
+              <h4 class="panel-sub-title"><i class="fa fa-circle-check"></i> Key Capabilities</h4>
+              <p style="font-size: 0.95rem; margin-bottom: 12px;">
+                - <strong>Multi-Cloud Landing Zones:</strong> Designing structured architectures on AWS, GCP, and Microsoft Azure with segmented VPCs and strict IAM controls.<br>
+                - <strong>Container Orchestration:</strong> Provisioning production-grade Kubernetes environments (EKS, GKE, AKS) with Linkerd/Istio for reliable service-to-service communication.<br>
+                - <strong>DevSecOps Pipelines:</strong> Building zero-trust pipelines incorporating static application security testing (SAST), software composition analysis (SCA), and container scanning.<br>
+                - <strong>Observability & Reliability:</strong> Establishing comprehensive metrics dashboards, distributed tracing, log aggregation, and smart alerting systems.
+              </p>
+            </div>
+            <div class="panel-sub-section">
+              <h4 class="panel-sub-title"><i class="fa-solid fa-shield-halved"></i> Zero-Trust Infrastructure Patterns</h4>
+              <p style="font-size: 0.95rem; margin-bottom: 12px;">
+                All configurations enforce strict network segregation, Web Application Firewalls (WAF), mutual TLS (mTLS) for microservices, and dynamic credential rotation using HashiCorp Vault.
+              </p>
+            </div>
+            <div class="panel-sub-section">
+              <h4 class="panel-sub-title"><i class="fa-solid fa-lightbulb"></i> Case Study: Kubernetes Migration</h4>
+              <p style="font-size: 0.95rem; margin-bottom: 12px;">
+                Migrated an enterprise core billing service with over 50 legacy components into Amazon EKS utilizing GitOps (ArgoCD), reducing server provisioning overhead by 40% and increasing service availability to 99.99%.
+              </p>
+            </div>
+            <div class="panel-sub-section">
+              <h4 class="panel-sub-title"><i class="fa fa-cubes"></i> Infrastructure Tool Stack</h4>
+              <div class="tool-list">
+                <div class="tool-card">AWS / GCP / Azure</div>
+                <div class="tool-card">Kubernetes / Docker / Nomad</div>
+                <div class="tool-card">Terraform / OpenTofu / Pulumi</div>
+                <div class="tool-card">GitHub Actions / GitLab CI / ArgoCD</div>
+                <div class="tool-card">Prometheus / Grafana / Datadog / OpenTelemetry</div>
+                <div class="tool-card">HashiCorp Vault / AWS KMS</div>
+              </div>
+            </div>
+            <div style="margin-top: 30px; display: flex; gap: 15px; flex-wrap: wrap;">
+              <a href="contact.html?subject=cloud" class="btn btn-primary">Consult Our DevOps Experts <i class="fa fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Panel 3: Analytics & Big Data -->
+        <div id="analytics-panel" class="cap-panel-view">
+          <div class="panel-header">
+            <i class="fa-solid fa-database"></i>
+            <h2 class="panel-title">Analytics &amp; Big Data</h2>
+          </div>
+          <div class="panel-body">
+            <p>
+              Convert high-velocity unstructured data streams into actionable operational assets and predictive models. We construct resilient data pipelines, scalable storage layers, and unified analytical engines to support low-latency querying, automated reporting, and real-time business intelligence dashboards.
+            </p>
+            <div class="panel-sub-section">
+              <h4 class="panel-sub-title"><i class="fa fa-circle-check"></i> Key Capabilities</h4>
+              <p style="font-size: 0.95rem; margin-bottom: 12px;">
+                - <strong>Modern Lakehouse Architectures:</strong> Unifying data warehouse querying speeds with the low cost of object storage utilizing Apache Iceberg, Delta Lake, and Apache Hudi.<br>
+                - <strong>High-Throughput Stream Processing:</strong> Engineering stream-processing engines for real-time event tracking, transactional auditing, and instant telemetry processing.<br>
+                - <strong>Orchstrated ETL/ELT Pipelines:</strong> Constructing secure data integration pipelines with schema enforcement, automated validation, and metadata lineage tracking.<br>
+                - <strong>Data Governance & Compliance:</strong> Implementing granular row- and column-level encryption, access policies, and comprehensive data cataloging.
+              </p>
+            </div>
+            <div class="panel-sub-section">
+              <h4 class="panel-sub-title"><i class="fa-solid fa-network-wired"></i> High-Volume Pipeline Patterns</h4>
+              <p style="font-size: 0.95rem; margin-bottom: 12px;">
+                Our architectures separate storage and compute dynamically, using Spark/Trino for ad-hoc querying, Kafka for persistent message queues, and Delta format partitioning for near-zero search delays.
+              </p>
+            </div>
+            <div class="panel-sub-section">
+              <h4 class="panel-sub-title"><i class="fa-solid fa-lightbulb"></i> Case Study: Streaming Telemetry Processing</h4>
+              <p style="font-size: 0.95rem; margin-bottom: 12px;">
+                Designed a telemetry streaming platform for a logistics firm processing over 250 million GPS and diagnostic events daily, enabling real-time routing adjustments and predictive parts failure scheduling.
+              </p>
+            </div>
+            <div class="panel-sub-section">
+              <h4 class="panel-sub-title"><i class="fa fa-cubes"></i> Data Tool Stack</h4>
+              <div class="tool-list">
+                <div class="tool-card">Apache Spark / PySpark / Databricks</div>
+                <div class="tool-card">Apache Kafka / Confluent / Redpanda</div>
+                <div class="tool-card">Snowflake / Google BigQuery / AWS Redshift</div>
+                <div class="tool-card">dbt (data build tool) / Apache Airflow / Prefect</div>
+                <div class="tool-card">Trino / Presto / ClickHouse</div>
+                <div class="tool-card">Apache Iceberg / Delta Lake</div>
+              </div>
+            </div>
+            <div style="margin-top: 30px; display: flex; gap: 15px; flex-wrap: wrap;">
+              <a href="contact.html?subject=bigdata" class="btn btn-primary">Consult Our Big Data Experts <i class="fa fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Panel 4: Block Chain -->
+        <div id="blockchain-panel" class="cap-panel-view">
+          <div class="panel-header">
+            <i class="fa-solid fa-link-slash"></i>
+            <h2 class="panel-title">Block Chain</h2>
+          </div>
+          <div class="panel-body">
+            <p>
+              Design tamper-proof distributed ledgers and secure smart contract architectures. We help enterprises establish multi-party trust networks, automate supply chains through smart agreements, and manage digital assets with audited safety protocols.
+            </p>
+            <div class="panel-sub-section">
+              <h4 class="panel-sub-title"><i class="fa fa-circle-check"></i> Key Capabilities</h4>
+              <p style="font-size: 0.95rem; margin-bottom: 12px;">
+                - <strong>Enterprise Private Ledgers:</strong> Deploying consortium blockchain platforms (Hyperledger Fabric, Corda) with segregated channels and private data collections.<br>
+                - <strong>Smart Contract Engineering:</strong> Authoring secure Solidity and Rust smart contracts optimized for performance, gas efficiency, and logical correctness.<br>
+                - <strong>Comprehensive Smart Contract Auditing:</strong> Conducting deep vulnerability analysis, static code analysis, and formal verification to mitigate logical and runtime risks.<br>
+                - <strong>Web3 Integration & Decentralized Storage:</strong> Implementing secure wallet integrations, decentralized identity (DID) systems, and IPFS/Filecoin storage systems.
+              </p>
+            </div>
+            <div class="panel-sub-section">
+              <h4 class="panel-sub-title"><i class="fa-solid fa-lock"></i> Security &amp; Ledger Auditing</h4>
+              <p style="font-size: 0.95rem; margin-bottom: 12px;">
+                Contracts are validated using automated formal verification tools (Slither, Mythril) alongside rigorous manual testing to block reentrancy, access-control bypasses, and mathematical overflows.
+              </p>
+            </div>
+            <div class="panel-sub-section">
+              <h4 class="panel-sub-title"><i class="fa-solid fa-lightbulb"></i> Case Study: Supply Chain Blockchain</h4>
+              <p style="font-size: 0.95rem; margin-bottom: 12px;">
+                Designed an EVM-compliant supply chain tracking network for a pharmaceutical manufacturer, securing batch verification records and checking transport temperature telemetry records across 4 global distribution networks.
+              </p>
+            </div>
+            <div class="panel-sub-section">
+              <h4 class="panel-sub-title"><i class="fa fa-cubes"></i> Blockchain Tool Stack</h4>
+              <div class="tool-list">
+                <div class="tool-card">Solidity / EVM / Rust / WASM</div>
+                <div class="tool-card">Hyperledger Fabric / Corda</div>
+                <div class="tool-card">Foundry / Hardhat / Truffle</div>
+                <div class="tool-card">Ethers.js / Web3.js / Viem</div>
+                <div class="tool-card">OpenZeppelin Contracts / Safe</div>
+                <div class="tool-card">IPFS / Arweave</div>
+              </div>
+            </div>
+            <div style="margin-top: 30px; display: flex; gap: 15px; flex-wrap: wrap;">
+              <a href="contact.html?subject=blockchain" class="btn btn-primary">Consult Our Blockchain Experts <i class="fa fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Panel 5: IoT Engineering -->
+        <div id="iot-panel" class="cap-panel-view">
+          <div class="panel-header">
+            <i class="fa-solid fa-microchip"></i>
+            <h2 class="panel-title">IoT Engineering</h2>
+          </div>
+          <div class="panel-body">
+            <p>
+              Connect remote physical hardware with scalable cloud telemetry pipelines and low-latency processing systems. We design end-to-end telemetry architectures, secure edge computing applications, and resilient data collection networks that operate seamlessly under low-bandwidth and intermittent connectivity conditions.
+            </p>
+            <div class="panel-sub-section">
+              <h4 class="panel-sub-title"><i class="fa fa-circle-check"></i> Key Capabilities</h4>
+              <p style="font-size: 0.95rem; margin-bottom: 12px;">
+                - <strong>Industrial IoT Integration (IIoT):</strong> Bridging legacy industrial equipment and sensors using industry standard protocols like Modbus, OPC-UA, and CAN bus.<br>
+                - <strong>Edge AI & Computer Vision:</strong> Deploying lightweight deep learning models on specialized accelerators (NVIDIA Jetson, Google Coral) for localized inference.<br>
+                - <strong>OTA Firmware & Device Management:</strong> Constructing cryptographic device onboarding, secure boot procedures, and fail-safe over-the-air firmware updates.<br>
+                - <strong>High-Volume Telemetry Processing:</strong> Architecting time-series ingestion engines capable of writing millions of sensor readings per second without data loss.
+              </p>
+            </div>
+            <div class="panel-sub-section">
+              <h4 class="panel-sub-title"><i class="fa-solid fa-microchip"></i> Edge Intelligence Patterns</h4>
+              <p style="font-size: 0.95rem; margin-bottom: 12px;">
+                We deploy localized model processing using NVIDIA TensorRT and edge-caching telemetry buffers (MQTT QoS 1/2) to prevent data gaps during cellular dropout events.
+              </p>
+            </div>
+            <div class="panel-sub-section">
+              <h4 class="panel-sub-title"><i class="fa-solid fa-lightbulb"></i> Case Study: Predictive Maintenance Edge</h4>
+              <p style="font-size: 0.95rem; margin-bottom: 12px;">
+                Deployed NVIDIA Jetson edge nodes across a fleet of factory milling cutters, detecting tool surface defects using local video classification and alerting floor operators immediately.
+              </p>
+            </div>
+            <div class="panel-sub-section">
+              <h4 class="panel-sub-title"><i class="fa fa-cubes"></i> IoT Tool Stack</h4>
+              <div class="tool-list">
+                <div class="tool-card">MQTT / CoAP / gRPC / Protobuf</div>
+                <div class="tool-card">AWS IoT Core / Azure IoT Hub / GCP Cloud IoT</div>
+                <div class="tool-card">NVIDIA Jetson / DeepStream SDK / TensorRT</div>
+                <div class="tool-card">InfluxDB / TimescaleDB / QuestDB</div>
+                <div class="tool-card">C++ / Rust / Python / Embedded Linux</div>
+                <div class="tool-card">Node-RED / EdgeX Foundry / Yocto Project</div>
+              </div>
+            </div>
+            <div style="margin-top: 30px; display: flex; gap: 15px; flex-wrap: wrap;">
+              <a href="contact.html?subject=iot" class="btn btn-primary">Consult Our IoT Experts <i class="fa fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Panel 6: Product Development -->
+        <div id="product-panel" class="cap-panel-view">
+          <div class="panel-header">
+            <i class="fa-solid fa-laptop-code"></i>
+            <h2 class="panel-title">Product Development</h2>
+          </div>
+          <div class="panel-body">
+            <p>
+              Deliver end-to-end custom application engineering and SaaS product development. We help enterprises and startups build resilient MVPs, scale legacy architectures, design multi-tenant database models, and implement modern API endpoints to accelerate time-to-market.
+            </p>
+            <div class="panel-sub-section">
+              <h4 class="panel-sub-title"><i class="fa fa-circle-check"></i> Key Capabilities</h4>
+              <p style="font-size: 0.95rem; margin-bottom: 12px;">
+                - <strong>Custom Software Engineering:</strong> Building robust full-stack web platforms and backend engines with clean modular codebases.<br>
+                - <strong>Rapid MVP Delivery:</strong> Transforming conceptual wireframes and feature outlines into production-ready proof of concepts within sprints.<br>
+                - <strong>SaaS Architecture Design:</strong> Designing secure multi-tenant microservices, user authentication rules, and subscription billing systems.<br>
+                - <strong>API Integration & Automation:</strong> Constructing scalable, documented REST and GraphQL interfaces to connect third-party enterprise services.
+              </p>
+            </div>
+            <div class="panel-sub-section">
+              <h4 class="panel-sub-title"><i class="fa-solid fa-gears"></i> Architectural &amp; Scale Patterns</h4>
+              <p style="font-size: 0.95rem; margin-bottom: 12px;">
+                We decouple components using event-driven event buses, enforce API versioning guidelines, implement global CDN caching layers, and scale databases utilizing load-balanced read replicas.
+              </p>
+            </div>
+            <div class="panel-sub-section">
+              <h4 class="panel-sub-title"><i class="fa-solid fa-lightbulb"></i> Case Study: Real-Time Collaborative Canvas</h4>
+              <p style="font-size: 0.95rem; margin-bottom: 12px;">
+                Designed and launched a collaborative engineering whiteboard tool supporting up to 5,000 active workspace editors per channel using WebSockets synchronization and multi-tenant schema partitioning.
+              </p>
+            </div>
+            <div class="panel-sub-section">
+              <h4 class="panel-sub-title"><i class="fa fa-cubes"></i> Product Tool Stack</h4>
+              <div class="tool-list">
+                <div class="tool-card">React / Next.js / Vue.js</div>
+                <div class="tool-card">Node.js / Express / Django</div>
+                <div class="tool-card">PostgreSQL / MongoDB / Redis</div>
+                <div class="tool-card">GraphQL / Apollo / REST APIs</div>
+                <div class="tool-card">AWS Lambda / Serverless</div>
+                <div class="tool-card">Stripe / Auth0 / Firebase Auth</div>
+              </div>
+            </div>
+            <div style="margin-top: 30px; display: flex; gap: 15px; flex-wrap: wrap;">
+              <a href="contact.html?subject=product" class="btn btn-primary">Consult Our Product Experts <i class="fa fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Panel 7: Mobile App Development -->
+        <div id="mobile-panel" class="cap-panel-view">
+          <div class="panel-header">
+            <i class="fa-solid fa-mobile-screen-button"></i>
+            <h2 class="panel-title">Mobile App Development</h2>
+          </div>
+          <div class="panel-body">
+            <p>
+              Create high-performance iOS and Android applications utilizing native and hybrid architectures. We build smooth user interfaces, integrate offline-first caching mechanisms, and orchestrate hardware-level integrations (sensors, Bluetooth, camera) to deliver stellar mobile experiences.
+            </p>
+            <div class="panel-sub-section">
+              <h4 class="panel-sub-title"><i class="fa fa-circle-check"></i> Key Capabilities</h4>
+              <p style="font-size: 0.95rem; margin-bottom: 12px;">
+                - <strong>Cross-Platform Development:</strong> Developing unified mobile apps with React Native or Flutter to optimize dev timelines without losing native feel.<br>
+                - <strong>Native App Engineering:</strong> Authoring high-performance native iOS (Swift) and Android (Kotlin) code for core rendering tasks.<br>
+                - <strong>Offline-First Systems:</strong> Designing local database synching systems (SQLite, Realm) that synchronize smoothly with cloud backends.<br>
+                - <strong>App Store Publishing & CI/CD:</strong> Setting up automated publishing workflows (Fastlane) to deploy testing builds and production releases.
+              </p>
+            </div>
+            <div class="panel-sub-section">
+              <h4 class="panel-sub-title"><i class="fa-solid fa-wifi"></i> Offline Sync Protocols</h4>
+              <p style="font-size: 0.95rem; margin-bottom: 12px;">
+                Our applications implement robust vector-clock conflict resolution systems and locally encrypt database records using SQLCipher to guarantee device security.
+              </p>
+            </div>
+            <div class="panel-sub-section">
+              <h4 class="panel-sub-title"><i class="fa-solid fa-lightbulb"></i> Case Study: Offline Field Inspection Utility</h4>
+              <p style="font-size: 0.95rem; margin-bottom: 12px;">
+                Developed an offline app for remote pipeline inspectors that caches visual inspection data and synchronizes metrics automatically when cellular connectivity is restored.
+              </p>
+            </div>
+            <div class="panel-sub-section">
+              <h4 class="panel-sub-title"><i class="fa fa-cubes"></i> Mobile Tool Stack</h4>
+              <div class="tool-list">
+                <div class="tool-card">React Native / Flutter / Expo</div>
+                <div class="tool-card">Swift / SwiftUI (iOS Native)</div>
+                <div class="tool-card">Kotlin / Jetpack Compose (Android)</div>
+                <div class="tool-card">SQLite / Realm / Firebase Firestore</div>
+                <div class="tool-card">App Store / Google Play Deployments</div>
+                <div class="tool-card">Fastlane / Codemagic (CI/CD)</div>
+              </div>
+            </div>
+            <div style="margin-top: 30px; display: flex; gap: 15px; flex-wrap: wrap;">
+              <a href="contact.html?subject=mobile" class="btn btn-primary">Consult Our Mobile Experts <i class="fa fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Panel 8: Staff Augmentation -->
+        <div id="staff-panel" class="cap-panel-view">
+          <div class="panel-header">
+            <i class="fa-solid fa-people-group"></i>
+            <h2 class="panel-title">Staff Augmentation</h2>
+          </div>
+          <div class="panel-body">
+            <p>
+              Scale your development team rapidly with our dedicated on-demand software engineers, QA specialists, and system architects. We embed highly trained tech talent into your existing workflows, matching your schedule, technical stack, and project management tools seamlessly.
+            </p>
+            <div class="panel-sub-section">
+              <h4 class="panel-sub-title"><i class="fa fa-circle-check"></i> Key Capabilities</h4>
+              <p style="font-size: 0.95rem; margin-bottom: 12px;">
+                - <strong>Flexible Team Scaling:</strong> Quickly onboarding single developers or full multidisciplinary teams to meet tight product deadlines.<br>
+                - <strong>Rigorous Talent Vetting:</strong> Providing engineers with deep expertise in Generative AI, cloud infrastructure, big data, and blockchain.<br>
+                - <strong>Seamless Integration:</strong> Aligning augmented engineers with your communication channels (Slack, Teams) and sprint tools (Jira, GitHub).<br>
+                - <strong>Global Delivery Standards:</strong> Ensuring developers follow high code quality, automated testing, and comprehensive documentation standards.
+              </p>
+            </div>
+            <div class="panel-sub-section">
+              <h4 class="panel-sub-title"><i class="fa-solid fa-handshake"></i> Agile Allocation &amp; SLA Sourcing</h4>
+              <p style="font-size: 0.95rem; margin-bottom: 12px;">
+                We guarantee talent availability with standard onboarding lead times under 10 business days and backup developer replacement SLA allocations to guarantee zero developer downtime.
+              </p>
+            </div>
+            <div class="panel-sub-section">
+              <h4 class="panel-sub-title"><i class="fa-solid fa-lightbulb"></i> Case Study: Scaling Fintech Backend Squad</h4>
+              <p style="font-size: 0.95rem; margin-bottom: 12px;">
+                Embedded a dedicated group of 6 full-stack engineers and 2 DevSecOps architects into a payment gateway project, assisting them in launching their microservices stack 2 months ahead of schedule.
+              </p>
+            </div>
+            <div class="panel-sub-section">
+              <h4 class="panel-sub-title"><i class="fa fa-cubes"></i> Augmented Roles</h4>
+              <div class="tool-list">
+                <div class="tool-card">Fullstack & Frontend Engineers</div>
+                <div class="tool-card">GenAI & ML Specialists</div>
+                <div class="tool-card">Cloud & DevSecOps Architects</div>
+                <div class="tool-card">Blockchain Ledger Developers</div>
+                <div class="tool-card">QA & E2E Automation Engineers</div>
+                <div class="tool-card">Agile Scrum Masters & Tech Leads</div>
+              </div>
+            </div>
+            <div style="margin-top: 30px; display: flex; gap: 15px; flex-wrap: wrap;">
+              <a href="contact.html?subject=staff" class="btn btn-primary">Augment Your Dev Team <i class="fa fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Panel 9: Technical Training -->
+        <div id="training-panel" class="cap-panel-view">
+          <div class="panel-header">
+            <i class="fa-solid fa-graduation-cap"></i>
+            <h2 class="panel-title">Technical Training</h2>
+          </div>
+          <div class="panel-body">
+            <p>
+              Upskill corporate departments and academic institutions on cutting-edge engineering concepts through our education wing, **Tech Vidyalaya**. We deliver curated curriculum paths, interactive sandbox assignments, live coding sprints, and industry hackathons to create practical readiness.
+            </p>
+            <div class="panel-sub-section">
+              <h4 class="panel-sub-title"><i class="fa fa-circle-check"></i> Key Capabilities</h4>
+              <p style="font-size: 0.95rem; margin-bottom: 12px;">
+                - <strong>Enterprise Tech Bootcamps:</strong> Retraining software groups on advanced generative AI (RAG, Agents), cloud architecture, and DevOps tools.<br>
+                - <strong>Academic Placement Sprints:</strong> Upskilling campus engineering students with hands-on labs and ATS resume portfolios to lock down placement rates.<br>
+                - <strong>Hackathons & Sprints:</strong> Organizing high-energy coding competitions centered around resolving simulated production defects and ML pipelines.<br>
+                - <strong>Custom Syllabus Drafting:</strong> Formulating customized corporate modules matching the tech stack of your team's specific product line.
+              </p>
+            </div>
+            <div class="panel-sub-section">
+              <h4 class="panel-sub-title"><i class="fa-solid fa-code"></i> Curriculum Co-Design</h4>
+              <p style="font-size: 0.95rem; margin-bottom: 12px;">
+                We coordinate with academic chairs and engineering leaders to design targeted coding modules with auto-graded sandboxes and virtual playground workspaces.
+              </p>
+            </div>
+            <div class="panel-sub-section">
+              <h4 class="panel-sub-title"><i class="fa-solid fa-lightbulb"></i> Case Study: AI Career Readiness Bootcamp</h4>
+              <p style="font-size: 0.95rem; margin-bottom: 12px;">
+                Trained over 450 engineering undergraduates in a 4-week hybrid camp on Generative AI systems, achieving a 94% success rate in subsequent technical job interviews.
+              </p>
+            </div>
+            <div class="panel-sub-section">
+              <h4 class="panel-sub-title"><i class="fa fa-cubes"></i> Upskilling Tracks</h4>
+              <div class="tool-list">
+                <div class="tool-card">Generative AI, LLMs, &amp; RAG</div>
+                <div class="tool-card">Cloud Architecture &amp; DevOps IaC</div>
+                <div class="tool-card">Modern Data Engineering &amp; ETL</div>
+                <div class="tool-card">Smart Contract Ledger Architectures</div>
+                <div class="tool-card">Web &amp; Mobile Fullstack Frameworks</div>
+                <div class="tool-card">System Design &amp; Scalability Sprints</div>
+              </div>
+            </div>
+            <div style="margin-top: 30px; display: flex; gap: 15px; flex-wrap: wrap;">
+              <a href="contact.html?subject=training" class="btn btn-primary">Partner for Training <i class="fa fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Engagement Process Section -->
+  <section class="section" style="background-color: var(--bg-dark);">
+    <div class="container">
+      <div class="section-title-wrap" data-reveal>
+        <span class="section-subtitle">How We Work</span>
+        <h2 class="section-title">Our Milestone Delivery Lifecycle</h2>
+      </div>
+
+      <div class="milestone-grid">
+        <div class="glass-card" style="padding: 30px; text-align: center;" data-reveal>
+          <div style="font-size: 1.8rem; font-weight: 800; color: var(--accent-cyan); margin-bottom: 15px;">01</div>
+          <h4 style="margin-bottom: 10px;">Discovery & PoC</h4>
+          <p style="font-size: 0.85rem; color: var(--text-muted);">We define constraints, evaluate blockchain/data applicability, and draft a fixed-scope Proof of Concept.</p>
+        </div>
+        <div class="glass-card" style="padding: 30px; text-align: center; transition-delay: 0.1s;" data-reveal>
+          <div style="font-size: 1.8rem; font-weight: 800; color: var(--accent-cyan); margin-bottom: 15px;">02</div>
+          <h4 style="margin-bottom: 10px;">Architecture</h4>
+          <p style="font-size: 0.85rem; color: var(--text-muted);">We define data schemas, hardware edge specs, smart contract parameters, and cloud resource layouts.</p>
+        </div>
+        <div class="glass-card" style="padding: 30px; text-align: center; transition-delay: 0.2s;" data-reveal>
+          <div style="font-size: 1.8rem; font-weight: 800; color: var(--accent-cyan); margin-bottom: 15px;">03</div>
+          <h4 style="margin-bottom: 10px;">Agile Build</h4>
+          <p style="font-size: 0.85rem; color: var(--text-muted);">Sprints implement the models and ledgers, deploying continuously to staging testing clusters.</p>
+        </div>
+        <div class="glass-card" style="padding: 30px; text-align: center; transition-delay: 0.3s;" data-reveal>
+          <div style="font-size: 1.8rem; font-weight: 800; color: var(--accent-cyan); margin-bottom: 15px;">04</div>
+          <h4 style="margin-bottom: 10px;">Handover & SLAs</h4>
+          <p style="font-size: 0.85rem; color: var(--text-muted);">We conduct security audits, hand over complete repositories, and activate 24/7 managed support.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div id="site-footer"></div>
+
+  <script type="module" src="js/main.js"></script>
+  <script>
+    function switchCapTab(panelId) {
+      // Hide all panels
+      document.querySelectorAll('.cap-panel-view').forEach(panel => {
+        panel.classList.remove('active');
+      });
+      // Show active panel
+      document.getElementById(panelId).classList.add('active');
+
+      // Deactivate all list items
+      document.querySelectorAll('.cap-menu-item').forEach(item => {
+        item.classList.remove('active');
+      });
+      // Activate clicked item
+      const clickedItem = Array.from(document.querySelectorAll('.cap-menu-item')).find(item => {
+        return item.onclick.toString().includes(panelId);
+      });
+      if (clickedItem) clickedItem.classList.add('active');
+
+      // Smooth scroll to content display for better view (especially on mobile/tablets where they stack)
+      const displayCard = document.querySelector('.cap-content-display');
+      if (displayCard) {
+        const rect = displayCard.getBoundingClientRect();
+        const headerOffset = 100; // Account for the sticky header height
+        // If viewport is small/stacked or the content card top overflows the visible viewport boundaries
+        if (window.innerWidth <= 992 || rect.top < headerOffset || rect.bottom > window.innerHeight) {
+          const bodyRect = document.body.getBoundingClientRect().top;
+          const elementRect = displayCard.getBoundingClientRect().top;
+          const elementPosition = elementRect - bodyRect;
+          const offsetPosition = elementPosition - headerOffset;
+
+          window.scrollTo({
+            top: offsetPosition,
+            behavior: 'smooth'
+          });
+        }
+      }
+    }
+
+    // Check hash on load and select appropriate panel
+    window.addEventListener('load', () => {
+      const hash = window.location.hash;
+      if (hash) {
+        if (hash === '#genai' || hash === '#ml') switchCapTab('genai-panel');
+        else if (hash === '#cloud') switchCapTab('cloud-panel');
+        else if (hash === '#analytics' || hash === '#bigdata') switchCapTab('analytics-panel');
+        else if (hash === '#blockchain') switchCapTab('blockchain-panel');
+        else if (hash === '#iot') switchCapTab('iot-panel');
+        else if (hash === '#product') switchCapTab('product-panel');
+        else if (hash === '#mobile') switchCapTab('mobile-panel');
+        else if (hash === '#staff' || hash === '#augmentation') switchCapTab('staff-panel');
+        else if (hash === '#training' || hash === '#education') switchCapTab('training-panel');
+      }
+    });
+  </script>
+</body>
+</html>

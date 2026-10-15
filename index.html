@@ -1,0 +1,1057 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="img/logo.svg" type="image/svg+xml">
+  <!-- Open Graph / Social Media -->
+  <meta property="og:title" content="Kpro Solutions | GenAI, Cloud & DevOps, Analytics & Big Data">
+  <meta property="og:description" content="Kpro Solutions Pvt. Ltd. delivers world-class GenAI Solutions, Cloud & DevOps, Analytics & Big Data, Block Chain, and IoT Engineering under a True Fixed Cost Model.">
+  <meta property="og:url" content="https://www.kpro.co.in">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://www.kpro.co.in/img/logo.svg">
+  <meta property="og:site_name" content="Kpro Solutions">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Kpro Solutions | GenAI, Cloud & DevOps, Analytics & Big Data">
+  <meta name="twitter:description" content="Kpro Solutions Pvt. Ltd. delivers world-class GenAI Solutions, Cloud & DevOps, Analytics & Big Data, Block Chain, and IoT Engineering under a True Fixed Cost Model.">
+  <link rel="canonical" href="https://www.kpro.co.in">
+  <meta name="description" content="Kpro Solutions Pvt. Ltd. delivers world-class GenAI Solutions, Cloud &amp; DevOps, Analytics &amp; Big Data, Block Chain, and IoT Engineering under a True Fixed Cost Model.">
+  <meta name="keywords" content="Kpro Solutions, GenAI Solutions, Cloud DevOps, Analytics, Big Data, Blockchain, IoT Engineering, Bengaluru">
+  <title>Kpro Solutions | GenAI, Cloud &amp; DevOps, Analytics &amp; Big Data</title>
+  
+  <!-- Structured Data (JSON-LD) for Search & LLM Engines -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://www.kpro.co.in/#organization",
+        "name": "Kpro Solutions Pvt. Ltd.",
+        "url": "https://www.kpro.co.in",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.kpro.co.in/img/logo.png"
+        },
+        "sameAs": [
+          "https://www.linkedin.com/company/kpro-solutions-pvt-ltd",
+          "https://github.com/markshukla/kprowebsite"
+        ],
+        "description": "Kpro Solutions delivers custom Generative AI tools, cloud migration, analytics systems, and high-trust blockchain ledgers.",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Bengaluru",
+          "addressRegion": "Karnataka",
+          "addressCountry": "IN"
+        }
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://www.kpro.co.in/#website",
+        "url": "https://www.kpro.co.in",
+        "name": "Kpro Solutions",
+        "publisher": {
+          "@id": "https://www.kpro.co.in/#organization"
+        },
+        "description": "Enterprise GenAI, Cloud & DevOps, Analytics & Big Data Services"
+      }
+    ]
+  }
+  </script>
+
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Performance: early connection hints -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <style>
+    /* Page specific overrides & custom layout styles */
+    .hero-section {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      padding-top: 120px;
+      overflow: hidden;
+    }
+    
+    /* Hero Slider styling */
+    .hero-slider-container {
+      position: relative;
+      width: 100%;
+      overflow: hidden;
+    }
+    .hero-slide {
+      display: none;
+      width: 100%;
+      animation: fadeEffect 0.6s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+    }
+    .hero-slide.active {
+      display: block;
+    }
+    @keyframes fadeEffect {
+      from { opacity: 0; transform: translateY(12px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .slider-dots {
+      position: absolute;
+      bottom: 40px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      gap: 12px;
+      z-index: 20;
+    }
+    .slider-dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: var(--glass-border);
+      cursor: pointer;
+      transition: var(--transition-fast);
+      border: 1px solid transparent;
+      /* Reset button defaults */
+      padding: 0;
+      appearance: none;
+      -webkit-appearance: none;
+    }
+    .slider-dot:focus-visible {
+      outline: 2px solid var(--accent-cyan);
+      outline-offset: 3px;
+    }
+    .slider-dot.active {
+      background: var(--accent-cyan);
+      box-shadow: 0 0 10px var(--accent-cyan-glow);
+      border-color: var(--accent-cyan);
+    }
+    .slider-dot:hover {
+      background: var(--text-primary);
+    }
+    
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: 48px;
+      align-items: center;
+      position: relative;
+      z-index: 2;
+    }
+    
+    .hero-content {
+      animation: fadeInUp 0.8s ease-out;
+    }
+    
+    .hero-title {
+      font-size: 3.5rem;
+      font-weight: 800;
+      line-height: 1.15;
+      margin-bottom: 24px;
+    }
+    
+    .hero-description {
+      font-size: 1.15rem;
+      color: var(--text-secondary);
+      margin-bottom: 36px;
+      max-width: 600px;
+    }
+    
+    .hero-actions {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+    
+    .hero-visual {
+      position: relative;
+      width: 100%;
+      height: 400px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      animation: fadeInUp 1s ease-out;
+    }
+    
+    /* Radar sonar pulsing rings */
+    .visual-pulse {
+      position: absolute;
+      width: 150px;
+      height: 150px;
+      background: radial-gradient(circle, var(--accent-cyan-glow) 0%, rgba(6, 182, 212, 0) 70%);
+      border-radius: 50%;
+      animation: sonar-pulse 4s cubic-bezier(0.215, 0.61, 0.355, 1) infinite;
+      z-index: 1;
+      pointer-events: none;
+    }
+    .visual-pulse-2 {
+      animation-delay: 2s;
+      background: radial-gradient(circle, var(--accent-mint-glow) 0%, rgba(16, 185, 129, 0) 70%);
+    }
+    @keyframes sonar-pulse {
+      0% { transform: scale(0.6); opacity: 0; }
+      10% { opacity: 0.6; }
+      100% { transform: scale(3); opacity: 0; }
+    }
+    
+    /* 3D Gyroscope Orbits */
+    .visual-orbit-container {
+      position: absolute;
+      width: 420px;
+      height: 420px;
+      perspective: 1000px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      pointer-events: none;
+      z-index: 2;
+    }
+    
+    .visual-orbit-ring {
+      position: absolute;
+      border: 1.5px dashed rgba(6, 182, 212, 0.2);
+      border-radius: 50%;
+      transform-style: preserve-3d;
+    }
+    
+    .ring-1 {
+      width: 380px;
+      height: 380px;
+      animation: rotate-3d-1 30s linear infinite;
+      border-color: rgba(6, 182, 212, 0.25);
+    }
+    .ring-2 {
+      width: 290px;
+      height: 290px;
+      animation: rotate-3d-2 22s linear infinite;
+      border-color: rgba(16, 185, 129, 0.25);
+    }
+    .ring-3 {
+      width: 200px;
+      height: 200px;
+      animation: rotate-3d-3 15s linear infinite;
+      border-color: rgba(6, 182, 212, 0.15);
+    }
+    
+    .orbit-node {
+      position: absolute;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      box-shadow: 0 0 10px currentColor;
+    }
+    
+    .node-1 {
+      top: 0;
+      left: 50%;
+      background: var(--accent-cyan);
+      color: var(--accent-cyan);
+      transform: translateX(-50%) translateZ(0);
+      box-shadow: 0 0 12px var(--accent-cyan);
+    }
+    .node-2 {
+      bottom: 0;
+      left: 50%;
+      background: var(--accent-mint);
+      color: var(--accent-mint);
+      transform: translateX(-50%) translateZ(0);
+      box-shadow: 0 0 12px var(--accent-mint);
+    }
+    .node-3 {
+      left: 0;
+      top: 50%;
+      background: var(--accent-cyan);
+      color: var(--accent-cyan);
+      transform: translateY(-50%) translateZ(0);
+      box-shadow: 0 0 8px var(--accent-cyan);
+    }
+    
+    @keyframes rotate-3d-1 {
+      0% { transform: rotateX(65deg) rotateY(15deg) rotateZ(0deg); }
+      100% { transform: rotateX(65deg) rotateY(15deg) rotateZ(360deg); }
+    }
+    @keyframes rotate-3d-2 {
+      0% { transform: rotateX(-25deg) rotateY(55deg) rotateZ(360deg); }
+      100% { transform: rotateX(-25deg) rotateY(55deg) rotateZ(0deg); }
+    }
+    @keyframes rotate-3d-3 {
+      0% { transform: rotateX(40deg) rotateY(-40deg) rotateZ(0deg); }
+      100% { transform: rotateX(40deg) rotateY(-40deg) rotateZ(360deg); }
+    }
+
+    /* Floating visual card */
+    .visual-card-floating {
+      animation: card-float 6s ease-in-out infinite;
+      z-index: 10;
+      transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1), box-shadow 0.4s ease, border-color 0.4s ease;
+    }
+    
+    @keyframes card-float {
+      0% { transform: translateY(0px) rotate(0deg); }
+      50% { transform: translateY(-10px) rotate(0.8deg); }
+      100% { transform: translateY(0px) rotate(0deg); }
+    }
+    
+    .visual-card {
+      padding: 30px;
+      max-width: 320px;
+      text-align: center;
+      box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+    }
+    
+    .visual-card:hover {
+      transform: scale(1.05) translateY(-14px) rotate(0deg) !important;
+      border-color: var(--accent-cyan);
+      box-shadow: var(--shadow-neon-cyan);
+    }
+    
+    .visual-card i {
+      font-size: 3rem;
+      background: linear-gradient(135deg, var(--accent-cyan), var(--accent-mint));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 20px;
+      filter: drop-shadow(0 0 10px var(--accent-cyan-glow));
+    }
+    
+    /* Stats Row */
+    .stats-section {
+      background: var(--bg-dark);
+      border-top: 1px solid var(--glass-border);
+      border-bottom: 1px solid var(--glass-border);
+      padding: 60px 0;
+    }
+    
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 30px;
+      text-align: center;
+    }
+    
+    .stat-number {
+      font-family: var(--font-heading);
+      font-size: 3rem;
+      font-weight: 800;
+      color: var(--text-primary);
+      margin-bottom: 8px;
+      display: inline-block;
+    }
+    
+    .stat-label {
+      font-size: 0.95rem;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+    }
+    
+    /* Solutions Showcase */
+    .solutions-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+    }
+    
+    .solution-card {
+      padding: 40px 30px;
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+    }
+    
+    .solution-icon {
+      width: 60px;
+      height: 60px;
+      border-radius: var(--border-radius-sm);
+      background: var(--accent-cyan-glow);
+      color: var(--accent-cyan);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.8rem;
+      margin-bottom: 24px;
+      border: 1px solid var(--accent-cyan);
+    }
+    
+    .solution-card:hover .solution-icon {
+      background: var(--accent-cyan);
+      color: var(--bg-darker);
+      box-shadow: var(--shadow-neon-cyan);
+    }
+    
+    .solution-title {
+      font-size: 1.5rem;
+      margin-bottom: 16px;
+    }
+    
+    .solution-desc {
+      font-size: 0.95rem;
+      color: var(--text-secondary);
+      margin-bottom: 24px;
+      flex-grow: 1;
+    }
+    
+    .solution-link {
+      font-family: var(--font-heading);
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: var(--accent-cyan);
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+    }
+    
+    .solution-link:hover {
+      color: var(--text-primary);
+    }
+    
+    /* Capabilities Split styling */
+    .cap-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      align-items: center;
+    }
+    
+    .cap-list {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    
+    .cap-item {
+      display: flex;
+      gap: 16px;
+      padding: 20px;
+      cursor: pointer;
+    }
+    
+    .cap-item-icon {
+      font-size: 1.5rem;
+      color: var(--accent-mint);
+      margin-top: 3px;
+    }
+    
+    .cap-item-title {
+      font-size: 1.2rem;
+      margin-bottom: 6px;
+    }
+    
+    .cap-item-desc {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+    }
+    
+    /* Fixed Cost banner */
+    .fixed-cost-card {
+      padding: 60px;
+      display: grid;
+      grid-template-columns: 1.5fr 1fr;
+      gap: 40px;
+      align-items: center;
+      background: linear-gradient(135deg, rgba(13, 20, 35, 0.8), rgba(25, 35, 60, 0.8));
+    }
+    
+    .fixed-cost-title {
+      font-size: 2.2rem;
+      margin-bottom: 16px;
+    }
+    
+    .fixed-cost-desc {
+      color: var(--text-secondary);
+      margin-bottom: 24px;
+    }
+    
+    .fixed-cost-points {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    
+    .fixed-cost-point {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-size: 0.95rem;
+    }
+    
+    .fixed-cost-point i {
+      color: var(--accent-mint);
+    }
+
+    /* Dropdown Employee Login Style is now defined globally in style.css */
+    
+    @media (max-width: 992px) {
+      .hero-grid, .cap-grid, .fixed-cost-card {
+        grid-template-columns: 1fr;
+        text-align: center;
+      }
+      .hero-title {
+        font-size: 2.8rem;
+      }
+      .hero-actions {
+        justify-content: center;
+      }
+      .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .solutions-grid {
+        grid-template-columns: 1fr;
+      }
+      .cap-item {
+        text-align: left;
+      }
+    }
+    
+    @media (max-width: 576px) {
+      .stats-grid {
+        grid-template-columns: 1fr;
+      }
+      .fixed-cost-card {
+        padding: 30px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Background Orbs -->
+  <div class="glow-orb orb-cyan" style="top: 15%; left: -100px;"></div>
+  <div class="glow-orb orb-mint" style="top: 60%; right: -100px;"></div>
+
+  <div id="site-header"></div>
+
+  <!-- Hero Section with Slides -->
+  <section class="hero-section" style="position: relative; padding-bottom: 80px;">
+    <div class="hero-slider-container">
+      <h1 class="sr-only">Kpro Solutions — Enterprise GenAI, Cloud & DevOps, Analytics & Big Data Services</h1>
+      
+      <!-- Slide 1: AI Development -->
+      <div class="hero-slide active">
+        <div class="container hero-grid">
+          <div class="hero-content">
+            <span class="badge">AI & Machine Learning</span>
+            <h2 class="hero-title">Harnessing real business values out of <span class="text-gradient">Artificial Intelligence</span></h2>
+            <p class="hero-description">
+              We engineer custom GenAI workflows, cognitive agent networks, and secure semantic pipelines that drive intelligence and concrete ROI.
+            </p>
+            <div class="hero-actions">
+              <a href="capabilities.html#genai" class="btn btn-primary">AI Capabilities <i class="fa fa-arrow-right"></i></a>
+              <a href="contact.html" class="btn btn-secondary">Get in Touch</a>
+            </div>
+          </div>
+          <div class="hero-visual">
+            <div class="visual-pulse"></div>
+            <div class="visual-pulse visual-pulse-2"></div>
+            <div class="visual-orbit-container">
+              <div class="visual-orbit-ring ring-1">
+                <div class="orbit-node node-1"></div>
+              </div>
+              <div class="visual-orbit-ring ring-2">
+                <div class="orbit-node node-2"></div>
+              </div>
+              <div class="visual-orbit-ring ring-3">
+                <div class="orbit-node node-3"></div>
+              </div>
+            </div>
+            <div class="glass-card visual-card visual-card-floating">
+              <i class="fa-solid fa-brain"></i>
+              <h3 style="margin-bottom: 10px;">Cognitive Systems</h3>
+              <p style="font-size: 0.85rem; color: var(--text-secondary);">Empowering decisions through enterprise model reasoning.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 2: Telephony CRM -->
+      <div class="hero-slide">
+        <div class="container hero-grid">
+          <div class="hero-content">
+            <span class="badge" style="background-color: var(--accent-mint-glow); color: var(--accent-mint); border-color: var(--accent-mint);">Proprietary SaaS</span>
+            <h2 class="hero-title">High-Efficiency Telephony CRM for <span class="text-gradient">Contact Centers</span></h2>
+            <p class="hero-description">
+              AI-enabled intelligence designed to fit any business domain, unifying agent dialing operations, smart routing, and customer engagement pipelines.
+            </p>
+            <div class="hero-actions">
+              <a href="contact.html" class="btn btn-primary">Contact Sales <i class="fa fa-arrow-right"></i></a>
+              <a href="products.html" class="btn btn-secondary">Explore Products</a>
+            </div>
+          </div>
+          <div class="hero-visual">
+            <div class="visual-pulse"></div>
+            <div class="visual-pulse visual-pulse-2"></div>
+            <div class="visual-orbit-container">
+              <div class="visual-orbit-ring ring-1">
+                <div class="orbit-node node-1"></div>
+              </div>
+              <div class="visual-orbit-ring ring-2" style="border-color: var(--accent-cyan); opacity: 0.4;"></div>
+              <div class="visual-orbit-ring ring-3" style="border-color: var(--accent-mint); opacity: 0.3;"></div>
+            </div>
+            <div class="glass-card visual-card visual-card-floating">
+              <i class="fa-solid fa-tty" style="color: var(--accent-mint); filter: drop-shadow(0 0 10px var(--accent-mint-glow));"></i>
+              <h3 style="margin-bottom: 10px;">Lead Telephony</h3>
+              <p style="font-size: 0.85rem; color: var(--text-secondary);">Direct calling channels and lead allocation logic.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Slide 3: IoT -->
+      <div class="hero-slide">
+        <div class="container hero-grid">
+          <div class="hero-content">
+            <span class="badge">Enterprise IoT</span>
+            <h2 class="hero-title">Connecting Edge telemetry with <span class="text-gradient">Real-Time</span> metrics</h2>
+            <p class="hero-description">
+              We design and scale high-concurrency sensory networks, collecting environmental metrics and executing local ML models on edge nodes.
+            </p>
+            <div class="hero-actions">
+              <a href="capabilities.html#iot" class="btn btn-primary">IoT Capabilities <i class="fa fa-arrow-right"></i></a>
+              <a href="contact.html" class="btn btn-secondary">Get in Touch</a>
+            </div>
+          </div>
+          <div class="hero-visual">
+            <div class="visual-pulse"></div>
+            <div class="visual-pulse visual-pulse-2"></div>
+            <div class="visual-orbit-container">
+              <div class="visual-orbit-ring ring-1">
+                <div class="orbit-node node-1"></div>
+              </div>
+              <div class="visual-orbit-ring ring-2">
+                <div class="orbit-node node-2"></div>
+              </div>
+              <div class="visual-orbit-ring ring-3">
+                <div class="orbit-node node-3"></div>
+              </div>
+            </div>
+            <div class="glass-card visual-card visual-card-floating">
+              <i class="fa-solid fa-microchip"></i>
+              <h3 style="margin-bottom: 10px;">Edge Ingestion</h3>
+              <p style="font-size: 0.85rem; color: var(--text-secondary);">Consolidating remote metrics at millisecond frequencies.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Slide 2: Blockchain -->
+      <div class="hero-slide">
+        <div class="container hero-grid">
+          <div class="hero-content">
+            <span class="badge">EVM & Ledgers</span>
+            <h2 class="hero-title">High-Trust decentralized <span class="text-gradient">Blockchain</span> ledger structures</h2>
+            <p class="hero-description">
+              Verify smart contract architectures, smart agreements, supply records, and ledger distributions with strict zero-vulnerability audits.
+            </p>
+            <div class="hero-actions">
+              <a href="capabilities.html#blockchain" class="btn btn-primary">Ledger Services <i class="fa fa-arrow-right"></i></a>
+              <a href="contact.html" class="btn btn-secondary">Get in Touch</a>
+            </div>
+          </div>
+          <div class="hero-visual">
+            <div class="visual-pulse"></div>
+            <div class="visual-pulse visual-pulse-2"></div>
+            <div class="visual-orbit-container">
+              <div class="visual-orbit-ring ring-1">
+                <div class="orbit-node node-1"></div>
+              </div>
+              <div class="visual-orbit-ring ring-2" style="border-color: var(--accent-cyan); opacity: 0.4;"></div>
+              <div class="visual-orbit-ring ring-3" style="border-color: var(--accent-mint); opacity: 0.3;"></div>
+            </div>
+            <div class="glass-card visual-card visual-card-floating">
+              <i class="fa-solid fa-link-slash" style="color: var(--accent-mint); filter: drop-shadow(0 0 10px var(--accent-mint-glow));"></i>
+              <h3 style="margin-bottom: 10px;">Smart Contracts</h3>
+              <p style="font-size: 0.85rem; color: var(--text-secondary);">Zero-risk transaction validation protocols.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 3: NyotaInvite -->
+      <div class="hero-slide">
+        <div class="container hero-grid">
+          <div class="hero-content">
+            <span class="badge" style="background-color: var(--accent-mint-glow); color: var(--accent-mint); border-color: var(--accent-mint);">Product Showcase</span>
+            <h2 class="hero-title">NyotaInvite: Smart digital <span class="text-gradient">RSVP Portals</span></h2>
+            <p class="hero-description">
+              Streamline event communications with customized invitation dashboards, automated WhatsApp messaging, and shared memory albums.
+            </p>
+            <div class="hero-actions">
+              <a href="products.html#nyotainvite" class="btn btn-primary">Explore NyotaInvite <i class="fa fa-arrow-right"></i></a>
+              <a href="https://nyotainvite.com" target="_blank" rel="noopener" class="btn btn-secondary">Visit Site <i class="fa fa-external-link"></i></a>
+            </div>
+          </div>
+          <div class="hero-visual">
+            <div class="visual-pulse"></div>
+            <div class="visual-pulse visual-pulse-2"></div>
+            <div class="visual-orbit-container">
+              <div class="visual-orbit-ring ring-1">
+                <div class="orbit-node node-1"></div>
+              </div>
+              <div class="visual-orbit-ring ring-2">
+                <div class="orbit-node node-2"></div>
+              </div>
+              <div class="visual-orbit-ring ring-3">
+                <div class="orbit-node node-3"></div>
+              </div>
+            </div>
+            <div class="glass-card visual-card visual-card-floating">
+              <i class="fa-solid fa-wand-magic-sparkles" style="color: var(--accent-cyan); filter: drop-shadow(0 0 10px var(--accent-cyan-glow));"></i>
+              <h3 style="margin-bottom: 10px;">Event Coordination</h3>
+              <p style="font-size: 0.85rem; color: var(--text-secondary);">Digital invitations, schedule cards, and guest trackers.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 4: Resumea -->
+      <div class="hero-slide">
+        <div class="container hero-grid">
+          <div class="hero-content">
+            <span class="badge">Product Showcase</span>
+            <h2 class="hero-title">Resumea: AI-Powered <span class="text-gradient">ATS Resume Builder</span></h2>
+            <p class="hero-description">
+              Optimize profiles to bypass automated search filters. Let semantic models write and adjust resume points for target roles.
+            </p>
+            <div class="hero-actions">
+              <a href="products.html#resumea" class="btn btn-primary">Explore Resumea <i class="fa fa-arrow-right"></i></a>
+              <a href="https://resumea.in" target="_blank" rel="noopener" class="btn btn-secondary">Visit Site <i class="fa fa-external-link"></i></a>
+            </div>
+          </div>
+          <div class="hero-visual">
+            <div class="visual-pulse"></div>
+            <div class="visual-pulse visual-pulse-2"></div>
+            <div class="visual-orbit-container">
+              <div class="visual-orbit-ring ring-1">
+                <div class="orbit-node node-1"></div>
+              </div>
+              <div class="visual-orbit-ring ring-2" style="border-color: var(--accent-cyan); opacity: 0.4;"></div>
+              <div class="visual-orbit-ring ring-3" style="border-color: var(--accent-mint); opacity: 0.3;"></div>
+            </div>
+            <div class="glass-card visual-card visual-card-floating">
+              <i class="fa-solid fa-file-invoice" style="color: var(--accent-cyan); filter: drop-shadow(0 0 10px var(--accent-cyan-glow));"></i>
+              <h3 style="margin-bottom: 10px;">ATS Ingress</h3>
+              <p style="font-size: 0.85rem; color: var(--text-secondary);">Tailoring curriculum vitaes using neural NLP models.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 5: HRHaaT -->
+      <div class="hero-slide">
+        <div class="container hero-grid">
+          <div class="hero-content">
+            <span class="badge" style="background-color: var(--accent-mint-glow); color: var(--accent-mint); border-color: var(--accent-mint);">Product Showcase</span>
+            <h2 class="hero-title">HRHaaT: Unified <span class="text-gradient">Enterprise HRIMS</span></h2>
+            <p class="hero-description">
+              Consolidate onboarding cycles, rosters, leaves, and attendance logs. Run operations and payroll structures in one clean platform.
+            </p>
+            <div class="hero-actions">
+              <a href="products.html#hrhaat" class="btn btn-primary">Explore HRHaaT <i class="fa fa-arrow-right"></i></a>
+              <a href="https://www.hrhaat.com" target="_blank" rel="noopener" class="btn btn-secondary">Visit Site <i class="fa fa-external-link"></i></a>
+            </div>
+          </div>
+          <div class="hero-visual">
+            <div class="visual-pulse"></div>
+            <div class="visual-pulse visual-pulse-2"></div>
+            <div class="visual-orbit-container">
+              <div class="visual-orbit-ring ring-1">
+                <div class="orbit-node node-1"></div>
+              </div>
+              <div class="visual-orbit-ring ring-2">
+                <div class="orbit-node node-2"></div>
+              </div>
+              <div class="visual-orbit-ring ring-3">
+                <div class="orbit-node node-3"></div>
+              </div>
+            </div>
+            <div class="glass-card visual-card visual-card-floating">
+              <i class="fa-solid fa-users-gear" style="color: var(--accent-mint); filter: drop-shadow(0 0 10px var(--accent-mint-glow));"></i>
+              <h3 style="margin-bottom: 10px;">HR Operations</h3>
+              <p style="font-size: 0.85rem; color: var(--text-secondary);">Dynamic payroll, onboarding checklist, and employee roster logs.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 6: BuildMyCV -->
+      <div class="hero-slide">
+        <div class="container hero-grid">
+          <div class="hero-content">
+            <span class="badge" style="background-color: var(--accent-mint-glow); color: var(--accent-mint); border-color: var(--accent-mint);">Product Showcase</span>
+            <h2 class="hero-title">BuildMyCV: Professional <span class="text-gradient">CV Architect</span></h2>
+            <p class="hero-description">
+              Generate custom, recruiter-ready, and ATS-optimized resumes along with instant shareable responsive web portfolios.
+            </p>
+            <div class="hero-actions">
+              <a href="products.html#buildmycv" class="btn btn-primary">Explore BuildMyCV <i class="fa fa-arrow-right"></i></a>
+              <a href="https://www.buildmycv.in" target="_blank" rel="noopener" class="btn btn-secondary">Visit Site <i class="fa fa-external-link"></i></a>
+            </div>
+          </div>
+          <div class="hero-visual">
+            <div class="visual-pulse"></div>
+            <div class="visual-pulse visual-pulse-2"></div>
+            <div class="visual-orbit-container">
+              <div class="visual-orbit-ring ring-1">
+                <div class="orbit-node node-1"></div>
+              </div>
+              <div class="visual-orbit-ring ring-2" style="border-color: var(--accent-cyan); opacity: 0.4;"></div>
+              <div class="visual-orbit-ring ring-3" style="border-color: var(--accent-mint); opacity: 0.3;"></div>
+            </div>
+            <div class="glass-card visual-card visual-card-floating">
+              <i class="fa-solid fa-address-card" style="color: var(--accent-cyan); filter: drop-shadow(0 0 10px var(--accent-cyan-glow));"></i>
+              <h3 style="margin-bottom: 10px;">Digital Portfolios</h3>
+              <p style="font-size: 0.85rem; color: var(--text-secondary);">Hosted CV webpages and professional portfolio links.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide: ForensicAudit -->
+      <div class="hero-slide">
+        <div class="container hero-grid">
+          <div class="hero-content">
+            <span class="badge" style="background-color: var(--accent-cyan-glow); color: var(--accent-cyan); border-color: var(--accent-cyan);">Product Showcase</span>
+            <h2 class="hero-title">ForensicAudit: Cognitive <span class="text-gradient">Ledger Auditor</span></h2>
+            <p class="hero-description">
+              Verify ledger records, transaction sequences, and contract integrity at runtime. Detect fraud vectors and compliance drifts instantly.
+            </p>
+            <div class="hero-actions">
+              <a href="contact.html" class="btn btn-primary">Schedule Demo <i class="fa fa-arrow-right"></i></a>
+              <a href="capabilities.html#blockchain" class="btn btn-secondary">Audit Capabilities</a>
+            </div>
+          </div>
+          <div class="hero-visual">
+            <div class="glass-card visual-card scanner-overlay" style="width: 100%; height: 260px; max-width: 420px; display: flex; flex-direction: column; justify-content: space-between;">
+              <div class="laser-line"></div>
+              <div style="display: flex; justify-content: space-between; align-items: center;">
+                <span style="font-size: 0.75rem; font-weight: bold; letter-spacing: 1px; color: var(--text-secondary); text-transform: uppercase;">
+                  <i class="fa-solid fa-file-shield" style="color: var(--accent-cyan); margin-right: 6px;"></i> Ledger Audit Scanner
+                </span>
+                <span class="badge" style="margin-bottom: 0; padding: 4px 8px; font-size: 0.7rem; background: rgba(0,255,240,0.1); border-color: var(--accent-cyan);">LIVE</span>
+              </div>
+              <div class="ledger-terminal" id="forensic-terminal-logs">
+                <!-- Log rows will be dynamically printed here -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 7: Acceleration Framework -->
+      <div class="hero-slide">
+        <div class="container hero-grid">
+          <div class="hero-content">
+            <span class="badge">Engagement Accelerator</span>
+            <h2 class="hero-title">Unifying delivery with the <span class="text-gradient">K-Pro Framework</span></h2>
+            <p class="hero-description">
+              Our outcomes-driven framework synchronizes Design, Development, Support, and Operationalization under a single-point accountability model.
+            </p>
+            <div class="hero-actions">
+              <a href="about.html#fixed-cost" class="btn btn-primary">Our Engagement Model <i class="fa fa-arrow-right"></i></a>
+              <a href="capabilities.html" class="btn btn-secondary">Explore Capabilities</a>
+            </div>
+          </div>
+          <div class="hero-visual">
+            <div class="framework-visual">
+              <div class="framework-diagram">
+                <!-- Center badge -->
+                <div class="framework-center">
+                  <span>A</span>
+                </div>
+                <!-- Dashed orbit line -->
+                <div class="framework-orbit"></div>
+                <!-- Outer Node: Design -->
+                <div class="framework-node node-design">
+                  <div class="framework-node-inner">
+                    <i class="fa-solid fa-compass-drafting"></i>
+                    <span>Design</span>
+                  </div>
+                </div>
+                <!-- Outer Node: Dev -->
+                <div class="framework-node node-dev">
+                  <div class="framework-node-inner">
+                    <i class="fa-solid fa-code"></i>
+                    <span>Dev</span>
+                  </div>
+                </div>
+                <!-- Outer Node: Ops -->
+                <div class="framework-node node-ops">
+                  <div class="framework-node-inner">
+                    <i class="fa-solid fa-gears"></i>
+                    <span>Ops</span>
+                  </div>
+                </div>
+                <!-- Outer Node: Support -->
+                <div class="framework-node node-support">
+                  <div class="framework-node-inner">
+                    <i class="fa-solid fa-headset"></i>
+                    <span>Support</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    
+    <!-- Slider Navigation Dots -->
+    <!-- Slider dots injected by js/slider.js as accessible <button> elements -->
+    <div class="slider-dots" role="group" aria-label="Slide navigation"></div>
+  </section>
+
+  <!-- Stats Section -->
+  <section class="stats-section">
+    <div class="container stats-grid">
+      <div>
+        <span class="stat-number text-gradient" id="stat-years">10+</span>
+        <div class="stat-label">Years of Innovation</div>
+      </div>
+      <div>
+        <span class="stat-number text-gradient" id="stat-projects">150+</span>
+        <div class="stat-label">Projects Completed</div>
+      </div>
+      <div>
+        <span class="stat-number text-gradient" id="stat-clients">50+</span>
+        <div class="stat-label">Enterprise Clients</div>
+      </div>
+      <div>
+        <span class="stat-number text-gradient" id="stat-risk">100%</span>
+        <div class="stat-label">Risk-Free Delivery</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Solutions Section -->
+  <section class="section" id="solutions">
+    <div class="container">
+      <div class="section-title-wrap" data-reveal>
+        <span class="section-subtitle">Proprietary Products</span>
+        <h2 class="section-title">Specialized Analytics Solutions</h2>
+      </div>
+      
+      <div class="solutions-grid">
+        <!-- Solution 1: ThirdEye -->
+        <div class="glass-card solution-card" data-reveal>
+          <div class="solution-icon">
+            <i class="fa-solid fa-eye"></i>
+          </div>
+          <h3 class="solution-title">ThirdEye Visual</h3>
+          <p class="solution-desc">
+            An advanced AI Computer Vision monitoring and visual inspection tool. Runs real-time observation algorithms to detect defects, anomalies, and verify compliance automatically.
+          </p>
+          <a href="solutions.html#thirdeye" class="solution-link">Learn More <i class="fa fa-chevron-right" style="font-size: 0.8rem;"></i></a>
+        </div>
+        
+        <!-- Solution 2: Supply Chain Analytics -->
+        <div class="glass-card solution-card" data-reveal style="transition-delay: 0.1s;">
+          <div class="solution-icon">
+            <i class="fa-solid fa-truck-ramp-box"></i>
+          </div>
+          <h3 class="solution-title">SupplyChainAnalytics</h3>
+          <p class="solution-desc">
+            End-to-end intelligence for material streams. Solves complex warehousing demands, anticipates supply constraints, and optimizes inventory routing using predictive ML models.
+          </p>
+          <a href="solutions.html#supply-chain" class="solution-link">Learn More <i class="fa fa-chevron-right" style="font-size: 0.8rem;"></i></a>
+        </div>
+        
+        <!-- Solution 3: Internal Threat Analytics -->
+        <div class="glass-card solution-card" data-reveal style="transition-delay: 0.2s;">
+          <div class="solution-icon">
+            <i class="fa-solid fa-shield-halved"></i>
+          </div>
+          <h3 class="solution-title">Internal Threat Analytics</h3>
+          <p class="solution-desc">
+            User and Entity Behavior Analytics (UEBA) protecting secure perimeters. Models daily activity streams to detect leak actions and preempt security anomalies.
+          </p>
+          <a href="solutions.html#threat-analytics" class="solution-link">Learn More <i class="fa fa-chevron-right" style="font-size: 0.8rem;"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Capabilities Section -->
+  <section class="section" style="background-color: var(--bg-dark);" id="capabilities">
+    <div class="container cap-grid">
+      <div data-reveal>
+        <span class="section-subtitle">Core Platforms</span>
+        <h2 class="section-title" style="margin-bottom: 24px;">Transforming Raw Data into Actionable Assets</h2>
+        <p style="margin-bottom: 30px; color: var(--text-secondary);">
+          Our multidisciplinary teams of data science experts, IoT hackers, and blockchain developers possess deep domain capabilities in custom engineering and software design.
+        </p>
+        <a href="capabilities.html" class="btn btn-outline">Explore Capabilities</a>
+      </div>
+      
+      <div class="cap-list">
+        <div class="glass-card cap-item" onclick="window.location.href='capabilities.html#genai'" data-reveal>
+          <i class="fa-solid fa-brain cap-item-icon"></i>
+          <div>
+            <h3 class="cap-item-title">GenAI Solutions</h3>
+            <p class="cap-item-desc">Developing custom LLM integrations, Retrieval-Augmented Generation (RAG), and autonomous AI agent workflows.</p>
+          </div>
+        </div>
+        
+        <div class="glass-card cap-item" onclick="window.location.href='capabilities.html#cloud'" data-reveal style="transition-delay: 0.1s;">
+          <i class="fa-solid fa-cloud-arrow-up cap-item-icon"></i>
+          <div>
+            <h3 class="cap-item-title">Cloud &amp; DevOps</h3>
+            <p class="cap-item-desc">Engineering secure, auto-scaling multi-cloud infrastructures using declarative Infrastructure as Code (IaC).</p>
+          </div>
+        </div>
+        
+        <div class="glass-card cap-item" onclick="window.location.href='capabilities.html#analytics'" data-reveal style="transition-delay: 0.2s;">
+          <i class="fa-solid fa-database cap-item-icon"></i>
+          <div>
+            <h3 class="cap-item-title">Analytics &amp; Big Data</h3>
+            <p class="cap-item-desc">Constructing low-latency streaming pipelines and modern analytical data lakehouse architectures.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Risk-Free Delivery Model (Fixed Cost) -->
+  <section class="section">
+    <div class="container">
+      <div class="glass-card fixed-cost-card" data-reveal>
+        <div>
+          <span class="badge" style="background-color: var(--accent-mint-glow); color: var(--accent-mint); border-color: var(--accent-mint);">Engagement Model</span>
+          <h2 class="fixed-cost-title">The True Fixed Cost Risk Mitigation Model</h2>
+          <p class="fixed-cost-desc">
+            We reject the typical uncertainties of enterprise consulting contracts. Kpro operates on a strict, outcomes-based financial model, ensuring your project is delivered precisely on budget.
+          </p>
+          <div class="fixed-cost-points">
+            <div class="fixed-cost-point"><i class="fa fa-circle-check"></i> Zero hourly billing surprises</div>
+            <div class="fixed-cost-point"><i class="fa fa-circle-check"></i> Clear, milestone-aligned release phases</div>
+            <div class="fixed-cost-point"><i class="fa fa-circle-check"></i> Complete engineering accountability</div>
+          </div>
+        </div>
+        <div style="text-align: center;">
+          <i class="fa-solid fa-scale-balanced" style="font-size: 8rem; color: var(--accent-mint); opacity: 0.8; filter: drop-shadow(0 0 20px var(--accent-mint-glow));"></i>
+          <h4 style="margin-top: 20px; font-weight: 500;">Guaranteed Budgets, Definite Outcomes.</h4>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="section" style="background-color: var(--bg-dark); text-align: center; overflow: hidden; border-top: 1px solid var(--glass-border);">
+    <div class="container" style="position: relative; z-index: 2;" data-reveal>
+      <h2 style="font-size: 2.5rem; margin-bottom: 20px;">Ready to Engineer Your Business Edge?</h2>
+      <p style="max-width: 600px; margin: 0 auto 40px auto; color: var(--text-secondary);">
+        Consult with our lead architects today. Let's design a custom blockchain PoC, an IoT ecosystem, or setup a modern answer-centric data warehouse.
+      </p>
+      <a href="contact.html" class="btn btn-primary" style="padding: 16px 36px;">Schedule Discovery Call <i class="fa fa-calendar-check"></i></a>
+    </div>
+  </section>
+
+  <div id="site-footer"></div>
+
+  <script type="module" src="js/main.js"></script>
+  <script type="module">
+    import { initSlider } from './js/slider.js';
+    document.addEventListener('DOMContentLoaded', initSlider);
+  </script>
+</body>
+</html>
